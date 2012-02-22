@@ -41,15 +41,62 @@ body {
   white-space: pre;
   word-wrap: normal;
 }
-.slide .json {
+#html-vs-json .json {
   float: right;
   width: 47.5%;
 }
-.slide .html {
+#html-vs-json .html {
   float: left;
   width: 47.5%;
 }
 .slide pre {
   font-family: Monaco, monospace, sans-serif;
   font-size: 12px;
+}
+
+/* SeatGeek Instant */
+.search-wrap {
+  position: relative;
+}
+.search-wrap .search-bg {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  height: 50px;
+  background: #FFF;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+  border: 1px solid #9a9a9a;
+  border-radius: 3px;
+  -webkit-transition: box-shadow .3s ease;
+}
+.search-wrap .search-bg input {
+  background-color: transparent;
+  outline: none;
+  -webkit-appearance: none;
+  border: 0px solid transparent;
+  padding: 10px !important;
+  margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  color: #333;
+  line-height: 20px;
+  height: 21px;
+  display: inline-block;
+  cursor: text;
+  overflow: hidden;
+  white-space: nowrap;
+  position: absolute;
+  top: 5px;
+  left: 2px;
+  right: 2px;
+}
+.search-wrap .search-bg.focused {
+  border: 1px solid #0079d6;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .2), 0 0 5px 2px #7db0f5;
+}
+.search-wrap #results {
+  list-style: none;
+  margin-left: 15px;
+  position: absolute;
+  top: 70px;
 }
