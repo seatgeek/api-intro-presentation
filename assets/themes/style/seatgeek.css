@@ -4,9 +4,52 @@ body {
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
 }
 .slide h1,
-.slide h2 {
+.slide h2,
+.slide h3,
+.slide h4 {
   font-weight: normal;
 }
 .slide h2 {
-  border-bottom: 1px solid #BBB;
+  border-bottom: none
+}
+.slide .fancy {
+  background: #FFF;
+  border: 1px solid #CCC;
+  border: 1px solid rgba(0, 0, 0, .3);
+  border-radius: 5px;
+  overflow: hidden; /* clip child elements that flow over the border radius */
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+  padding: 10px;
+  margin-bottom: 20px;
+}
+/*.slide pre {
+  border: 1px solid #ddd;
+  padding: 10px;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1), 0 0 40px rgba(0, 0, 0, 0.05) inset;
+  position: relative;
+  color:#666;
+}*/
+.slide .fancy pre {
+  margin-bottom: 0;
+  padding:0;
+  border:none;
+  color:#666;
+  box-sha dow: 0 0 40px rgba(0, 0, 0, 0.05) inset;
+  display: block;
+  overflow: auto;
+  white-space: pre;
+  word-wrap: normal;
+}
+.slide .json {
+  float: right;
+  width: 47.5%;
+}
+.slide .html {
+  float: left;
+  width: 47.5%;
+}
+.slide pre {
+  font-family: Monaco, monospace, sans-serif;
+  font-size: 12px;
 }

@@ -43,12 +43,1368 @@
 <section class="slide" id="html-vs-json">
     <h2>HTML vs JSON</h2>
     <p>Comparison Please</p>
-    <pre><code class="json">{
-  "id": 1
-}</code></pre>
-    <pre><code class="html">&lt;html&gt;
-  &lt;body&gt;
-&hellip;</code></pre>
+    <div class="fancy html">
+      <!-- <h4>HTML</h4> -->
+      <pre>&lt;!DOCTYPE html&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot; xmlns:fb=&quot;http://www.facebook.com/2008/fbml&quot; xml:lang=&quot;en&quot; lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=EmulateIE7&quot; /&gt;
+    &lt;meta name=&quot;apple-mobile-web-app-capable&quot; content=&quot;yes&quot; /&gt;
+    &lt;meta name=&quot;apple-mobile-web-app-status-bar-style&quot; content=&quot;black&quot; /&gt;
+    &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;
+&lt;meta http-equiv=&quot;Content-Language&quot; content=&quot;en&quot; /&gt;
+    &lt;meta name=&quot;title&quot; content=&quot;Heat vs. Knicks Tickets, New York, Madison Square Garden, 4/15/2012 | SeatGeek&quot; /&gt;
+&lt;meta name=&quot;description&quot; content=&quot;Search 60+ sites at once to find the best deals on Heat vs. Knicks Tickets on April 15, 2012 in New York, NY with Deal Score&#x2122;. You&#x2019;ll save time and money.&quot; /&gt;
+&lt;meta name=&quot;keywords&quot; content=&quot;heat vs. knicks tickets, new york knicks tickets, april tickets&quot; /&gt;
+&lt;meta name=&quot;robots&quot; content=&quot;index, follow&quot; /&gt;
+    &lt;title&gt;Heat vs. Knicks Tickets, New York, Madison Square Garden, 4/15/2012 | SeatGeek&lt;/title&gt;
+
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; media=&quot;screen&quot; href=&quot;/css/bundle_common.f8dc07db6e92473bf963067dd1213b31ffd978bb.css&quot; /&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; media=&quot;screen&quot; href=&quot;/css/bundle_maps.f8dc07db6e92473bf963067dd1213b31ffd978bb.css&quot; /&gt;
+
+
+&lt;link rel=&quot;canonical&quot; href=&quot;http://seatgeek.com/heat-knicks-tickets/4-15-2012-new-york-new-york-madison-square-garden/nba/760318/&quot;/&gt;
+&lt;meta property=&quot;og:url&quot; content=&quot;http://seatgeek.com/heat-knicks-tickets/4-15-2012-new-york-new-york-madison-square-garden/nba/760318/&quot;/&gt;
+    &lt;!--[if IE 6]&gt;&lt;script src=&quot;http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE7.js&quot;&gt;&lt;/script&gt;&lt;![endif]--&gt;
+
+    &lt;!--[if lt IE 9]&gt;
+    &lt;style type=&quot;text/css&quot;&gt;
+        .search .label, .search input[type=&quot;text&quot;] { padding-top: 17px !important; }
+        * { outline: none; }
+        #ticket_list { min-height: 1000px; height: auto !important; height: 1000px; }
+        #sgloading { border: 2px solid #3c628d; }
+        .dd .dropdown { border: 1px solid #00345F; border-top-width: 0; left: -1px; }
+        .filter .dropdown { border-top-width: 1px; }
+        .account-dropdown .dropdown { left: auto; border-right: 0; }
+        #deal-score-explanation-popup.popupv3 .body { border: 1px solid #000; }
+    &lt;/style&gt;
+    &lt;![endif]--&gt;
+
+
+    &lt;script type=&quot;text/javascript&quot; src=&quot;//use.typekit.com/lpd6mqr.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;try{Typekit.load();}catch(e){}&lt;/script&gt;
+
+      &lt;script type=&quot;text/javascript&quot; src=&quot;http://cdn.seatgeek.com/js/jquery/jquery-1.7.1.min.js&quot;&gt;&lt;/script&gt;
+  &lt;script type=&quot;text/javascript&quot; src=&quot;http://cdn.seatgeek.com/js/jquery/jquery-ui-1.8.8.custom.min.js&quot;&gt;&lt;/script&gt;
+  &lt;script type=&quot;text/javascript&quot;&gt;jQuery.noConflict();&lt;/script&gt;
+
+    &lt;!--[if lte IE 8]&gt;&lt;script language=&quot;javascript&quot; type=&quot;text/javascript&quot; src=&quot;/js/flot/excanvas.min.js&quot;&gt;&lt;/script&gt;&lt;![endif]--&gt;
+    &lt;script language=&quot;javascript&quot; type=&quot;text/javascript&quot; src=&quot;/js/flot/jquery.flot.js&quot;&gt;&lt;/script&gt;
+
+        &lt;script src=&quot;http://cdn.seatgeek.com/js/raphael/raphael.min.js&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;http://cdn.seatgeek.com/js/underscore/underscore-min.js&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;http://cdn.seatgeek.com/js/backbone/backbone-min.js&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+    &lt;script type=&quot;text/javascript&quot; src=&quot;/js/bundle_jquery-plugins.75887a1512b31750227500141d6e7b63d9b931ff.js&quot;&gt;&lt;/script&gt;
+    &lt;script type=&quot;text/javascript&quot; src=&quot;/js/bundle_customer.75887a1512b31750227500141d6e7b63d9b931ff.js&quot;&gt;&lt;/script&gt;
+    &lt;script type=&quot;text/javascript&quot; src=&quot;https://apis.google.com/js/plusone.js&quot;&gt;&lt;/script&gt;
+
+    &lt;!--[if IE 6]&gt;
+      &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/css/ie6-new.css&quot; /&gt;
+      &lt;style type=&quot;text/css&quot;&gt;
+          .popup .listings {height:380px;} /* min and max height don't work in IE6 */
+          .listings .listing .lower {height:16px;} /* this contains float elements */
+          #ticket_list {height: 600px;width: 320px;display:block;}
+          .scroll {height: 600px; width: 320px;}
+      &lt;/style&gt;
+    &lt;![endif]--&gt;
+
+
+
+  &lt;meta property=&quot;og:type&quot; content=&quot;seatgeek:event&quot; /&gt;
+  &lt;meta property=&quot;og:title&quot; content=&quot;Miami Heat at New York Knicks at Madison Square Garden on April 15, 2012&quot; /&gt;
+  &lt;meta property=&quot;og:description&quot; content=&quot;I just got a great deal on tickets with SeatGeek. Check it out!&quot; /&gt;
+  &lt;meta property=&quot;og:location&quot; content=&quot;hack&quot; /&gt;
+  &lt;meta property=&quot;og:image&quot; content=&quot;http://cdn.seatgeek.com/images/bandmedium/band_medium_2090.jpg&quot; /&gt;
+  &lt;meta property=&quot;og:latitude&quot; content=&quot;40.7518085575&quot; /&gt;
+  &lt;meta property=&quot;og:longitude&quot; content=&quot;-73.9924907684&quot; /&gt;
+  &lt;meta property=&quot;og:street-address&quot; content=&quot;4 Pennsylvania Plaza&quot; /&gt;
+  &lt;meta property=&quot;og:locality&quot; content=&quot;New York&quot; /&gt;
+  &lt;meta property=&quot;og:region&quot; content=&quot;NY&quot; /&gt;
+  &lt;meta property=&quot;og:postal-code&quot; content=&quot;10001&quot; /&gt;
+  &lt;meta property=&quot;og:country&quot; content=&quot;US&quot; /&gt;
+
+&lt;!-- og:url is included by create_canonical --&gt;
+&lt;meta property=&quot;og:site_name&quot; content=&quot;SeatGeek&quot;/&gt;
+&lt;meta property=&quot;fb:app_id&quot; content=&quot;130121696309&quot; /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;!-- ga_header partial --&gt;
+
+
+&lt;script type=&quot;text/javascript&quot;&gt;
+  var _gaq = _gaq || [];
+  (function () {
+    var auth_status = false;
+    var combination = typeof(utmx) == 'function' ? utmx('combination') : 'not-set';
+    _gaq.push(['_setAccount', &quot;UA-2380337-9&quot;]);
+    _gaq.push(['_setCustomVar',
+        1,                          // Set to the first custom variable slot
+        'logged_in',                // Custom variable name
+        auth_status,                // Set to login status
+        2                           // Sets the scope to session-level within GA
+    ]);
+    _gaq.push(['_setCustomVar',
+        2,                          // The slot for the custom variable.
+        'GWO',                      // The name for the custom variable.
+        'variation-' + combination, // The value for the custom variable.
+        2                           // Sets the scope to session-level within GA
+    ]);
+    _gaq.push(['_trackPageview']);
+    _gaq.push(['_setSiteSpeedSampleRate', 2]);
+  })();
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+&lt;/script&gt;
+    &lt;script type=&quot;text/javascript&quot;&gt;
+
+  (function () {
+    var root = document.createElement(&quot;div&quot;); root.id = &quot;fb-root&quot;;
+    document.getElementsByTagName(&quot;body&quot;)[0].appendChild(root);
+    SG.load_script_async(('https:' == document.location.protocol ? 'https' : 'http') + &quot;://connect.facebook.net/en_US/all.js&quot;);
+  })();
+
+  window.fbAsyncInit = function () {
+    FB.init({
+      appId: '130121696309',
+      status: true,
+      cookie: true,
+      xfbml:  true,
+      oauth:  true,
+      channelUrl: ('https:' == document.location.protocol ? 'https' : 'http') + &quot;://&quot; + &quot;seatgeek.com&quot; + &quot;/channel.html&quot;
+    });
+
+
+    jQuery(document).trigger(&quot;fb:init&quot;);
+  };
+
+&lt;/script&gt;
+    &lt;div class=&quot;map-page container &quot; style=&quot;z-index:0; overflow: hidden;&quot;&gt;
+
+        &lt;!-- Map Area and Sidebar --&gt;
+        &lt;div class=&quot;map-content search-results bbm-disabled container&quot; style=&quot;top:50px;&quot;&gt;
+
+            &lt;!-- Map Area --&gt;
+            &lt;div id=&quot;window&quot; class=&quot;container&quot; style=&quot;overflow:visible&quot; itemscope itemtype=&quot;http://schema.org/Event&quot;&gt;
+
+                &lt;!-- Seating Map --&gt;
+                &lt;div id=&quot;drag-container&quot; class=&quot;container map-specific&quot; style=&quot;z-index:1; right:-332px&quot;&gt;
+                    &lt;div id=&quot;holder&quot; style=&quot;z-index:0&quot;&gt;
+                        &lt;div class=&quot;pattern&quot;&gt;&lt;/div&gt;
+                                                &lt;div id=&quot;map-tiles&quot;&gt;&lt;/div&gt;
+                        &lt;div id=&quot;canvas-spot&quot;&gt;&lt;/div&gt;
+                        &lt;div id=&quot;marker-holder&quot;&gt;&lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;!-- Map Overlays --&gt;
+                &lt;div class=&quot;over-map&quot; style=&quot;z-index:2&quot;&gt;
+
+                    &lt;!-- Search Box --&gt;
+                    &lt;div class=&quot;search-container homepage&quot;&gt;
+                        &lt;div class=&quot;search-structure&quot;&gt;
+                            &lt;div class=&quot;search-start&quot;&gt;&lt;div class=&quot;search-icon&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+                            &lt;div id=&quot;search-bar&quot; class=&quot;search&quot;&gt;
+                                &lt;h1 class=&quot;label&quot;&gt;&lt;span itemprop=&quot;name&quot;&gt;Miami Heat at New York Knicks tickets&lt;/span&gt;&lt;/h1&gt;
+                                &lt;form action=&quot;/search/&quot; autocomplete=&quot;off&quot; id=&quot;search-form&quot; method=&quot;get&quot;&gt;
+                                    &lt;input type=&quot;text&quot; id=&quot;search-bar-input&quot; name=&quot;search&quot; autocomplete=&quot;off&quot; value=&quot;Miami Heat at New York Knicks tickets&quot; class=&quot;ghosted&quot; /&gt;
+                                &lt;/form&gt;
+                                &lt;div id=&quot;search-loading&quot; style=&quot;display:none&quot;&gt;
+                                    &lt;img src=&quot;http://cdn.seatgeek.com/images/loaders/searchLoader.gif&quot; alt=&quot;Loading Miami Heat at New York Knicks...&quot; /&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div class=&quot;search-end&quot;&gt;&lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                    &lt;!-- Event Details --&gt;
+                    &lt;div class=&quot;event-details&quot;&gt;
+                        &lt;div class=&quot;event-details-inner&quot;&gt;
+                            &lt;div class=&quot;event-meta&quot;&gt;
+                                &lt;div class=&quot;datetime&quot; title=&quot;Sunday April 15, 2012 at 1:00 pm&quot;&gt;
+                                  &lt;time itemprop=&quot;startDate&quot; content=&quot;2012-04-15&quot;&gt;
+                                    Sunday April 15, 2012 at 1:00 pm                                  &lt;/time&gt;
+                                &lt;/div&gt;
+                                &lt;div class=&quot;venue&quot; title=&quot;Madison Square Garden - New York, NY&quot; itemprop=&quot;location&quot; itemscope itemtype=&quot;http://schema.org/Place&quot;&gt;
+                                                                    &lt;a itemprop=&quot;url&quot; href=&quot;/madison-square-garden-tickets/&quot;&gt;&lt;span itemprop=&quot;name&quot;&gt;Madison Square Garden&lt;/span&gt;&lt;/a&gt;  &amp;ndash;
+                                  &lt;span itemprop=&quot;address&quot; itemscope itemtype=&quot;http://schema.org/PostalAddress&quot;&gt;
+                                                                          &lt;a href=&quot;/new-york-new-york-event-tickets/&quot;&gt;&lt;span class=&quot;locality&quot; itemprop=&quot;addressLocality&quot;&gt;New York&lt;/span&gt;, &lt;span class=&quot;region&quot; itemprop=&quot;addressRegion&quot;&gt;NY&lt;/span&gt;&lt;/a&gt;                                                                      &lt;/span&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;event-details-end&quot;&gt;&lt;/div&gt;
+                    &lt;/div&gt;
+
+                    &lt;!-- Zoom Controls --&gt;
+                    &lt;div class=&quot;zoom&quot;&gt;
+                        &lt;a href=&quot;#&quot; onclick=&quot;SG.map.zoomIn();  return false;&quot; class=&quot;zoom-in&quot;&gt;&lt;/a&gt;
+                        &lt;a href=&quot;#&quot; onclick=&quot;SG.map.zoomOut(); return false;&quot; class=&quot;zoom-out&quot;&gt;&lt;/a&gt;
+                    &lt;/div&gt;
+
+                    &lt;!-- Map Key --&gt;
+                    &lt;div class=&quot;key&quot;&gt;
+                        &lt;div class=&quot;inner&quot;&gt;&lt;table&gt;&lt;tr&gt;
+                            &lt;td class=&quot;bad&quot;&gt;OK Deal&lt;/td&gt;
+                            &lt;td class=&quot;key-colors&quot;&gt;&lt;img src=&quot;http://cdn.seatgeek.com/images/map/new/key-icons-new.png&quot; alt=&quot;Key-icons-new&quot; /&gt;&lt;/td&gt;
+                            &lt;td class=&quot;great&quot;&gt;Best Deal&lt;/td&gt;
+                        &lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;
+                        &lt;div class=&quot;end&quot;&gt;&lt;/div&gt;
+                    &lt;/div&gt;
+
+                    &lt;!-- Ad --&gt;
+                                          &lt;div class=&quot;bloomberg-33-film-forum-sponsorship lower-bar&quot; id=&quot;lower-bar-module&quot;&gt;
+  &lt;div class=&quot;end&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;inner&quot;&gt;
+    &lt;a href=&quot;http://seatgeek.com/film-forum-2-tickets/&quot; rel=&quot;nofollow&quot; target=&quot;_blank&quot; id=&quot;sponsorship_link&quot;&gt;
+      &lt;div class=&quot;sponsorship-container&quot;&gt;
+        &lt;div class=&quot;lower-label&quot;&gt;Sponsored&lt;/div&gt;
+        &lt;div class=&quot;lower-image&quot;&gt;&lt;img src=&quot;http://cdn.seatgeek.com/uploads/sponsorships/4f2f2fcd03/33.png&quot; title=&quot;NYC leading film house!&quot; /&gt;&lt;/div&gt;
+        &lt;div class=&quot;lower-tagline&quot;&gt;NYC leading film house!&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;&lt;script type=&quot;text/javascript&quot;&gt;
+  _gaq.push(['_trackEvent', 'ads', 'impression', 'event-lowerbar-bloomberg-33-film-forum', undefined, true]);
+  (new SG.Tracker()).track({ category: 'ads:impression:14', detail: 'event-lowerbar-bloomberg-33-film-forum', placement_id: 61 });
+  jQuery(function () {
+    jQuery(&quot;.bloomberg-33-film-forum-sponsorship a&quot;).click(function (e) {
+      _gaq.push(['_trackEvent', 'ads', 'click', 'event-lowerbar-bloomberg-33-film-forum', undefined, true]);
+      (new SG.Tracker()).track({ category: 'ads:impression:14', detail: 'event-lowerbar-bloomberg-33-film-forum', placement_id: 61 });
+    });
+  });
+&lt;/script&gt;                    
+
+                    &lt;!-- Seat View --&gt;
+                    &lt;div class=&quot;view-from-seat-large&quot; style=&quot;display:none&quot;&gt;&lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+
+            &lt;!-- Sidebar --&gt;
+            &lt;div class=&quot;sidebar container&quot; id=&quot;listing_sidebar&quot; style=&quot;display: none;&quot;&gt;
+                &lt;div class=&quot;market-listings container&quot;&gt;
+                    &lt;div class=&quot;listings container&quot;&gt;
+
+                        &lt;!-- Secondary Bar --&gt;
+                        &lt;div class=&quot;secondbar&quot;&gt;
+                          &lt;ul class=&quot;secondbar-ul&quot;&gt;
+                            &lt;li class=&quot;filter dd&quot;&gt;
+                                &lt;a href=&quot;#&quot; class=&quot;label&quot; id=&quot;filter&quot;&gt;Filter &lt;span class=&quot;dd-arrow&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+                                &lt;div class=&quot;dropdown filters&quot;&gt;
+                                            &lt;div class=&quot;quantity filter&quot;&gt;
+            &lt;label for=&quot;quantity&quot;&gt;# Tickets&lt;/label&gt;
+            &lt;select id=&quot;quantity&quot;&gt;
+                &lt;option value=&quot;&quot;&gt;Any&lt;/option&gt;
+                                &lt;option value=&quot;1&quot;&gt;
+                    1                &lt;/option&gt;
+                                &lt;option value=&quot;2&quot;&gt;
+                    2                &lt;/option&gt;
+                                &lt;option value=&quot;3&quot;&gt;
+                    3                &lt;/option&gt;
+                                &lt;option value=&quot;4&quot;&gt;
+                    4                &lt;/option&gt;
+                                &lt;option value=&quot;5&quot;&gt;
+                    5                &lt;/option&gt;
+                                &lt;option value=&quot;6&quot;&gt;
+                    6                &lt;/option&gt;
+                                &lt;option value=&quot;7&quot;&gt;
+                    7                &lt;/option&gt;
+                                &lt;option value=&quot;8&quot;&gt;
+                    8                &lt;/option&gt;
+                                &lt;option value=&quot;9&quot;&gt;
+                    9                &lt;/option&gt;
+                                &lt;option value=&quot;10&quot;&gt;10+&lt;/option&gt;
+            &lt;/select&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;price filter&quot;&gt;
+            &lt;label for=&quot;max_price&quot;&gt;Price&lt;/label&gt;
+            &lt;table&gt;
+                &lt;tr&gt;
+                    &lt;td class=&quot;priceInputCell text-shadow&quot;&gt;&lt;input id=&quot;min_price&quot; type=&quot;text&quot; value=&quot;0&quot; autocomplete=&quot;off&quot; /&gt;&lt;/td&gt;
+                    &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+                    &lt;td style=&quot;width:172px; vertical-align:middle;padding-bottom: 1px;&quot;&gt;
+                        &lt;div id=&quot;price_slider&quot; class=&quot;slider&quot; style=&quot;width:160px;&quot;&gt;
+                            &lt;div class=&quot;track&quot; style=&quot;width:171px;&quot;&gt;&lt;/div&gt;
+                            &lt;div id=&quot;min_handle&quot; class=&quot;handle ui-slider-handle&quot;&gt;&lt;/div&gt;
+                            &lt;div id=&quot;max_handle&quot; class=&quot;handle ui-slider-handle&quot; style=&quot;left:100%&quot;&gt;&lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/td&gt;
+                    &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+                    &lt;td class=&quot;priceInputCell text-shadow&quot;&gt;&lt;input id=&quot;max_price&quot; type=&quot;text&quot; autocomplete=&quot;off&quot; /&gt;&lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;etickets_only filter&quot;&gt;
+            &lt;input type=&quot;checkbox&quot; name=&quot;etickets_only&quot; id=&quot;etickets_only&quot; value=&quot;0&quot; /&gt; &lt;label for=&quot;etickets_only&quot;&gt;E-tickets only&lt;/label&gt;
+        &lt;/div&gt;
+
+                &lt;div class=&quot;market filter&quot; style=&quot;display:none&quot;&gt;
+            &lt;input type=&quot;text&quot; value=&quot;&quot; autocomplete=&quot;off&quot; id=&quot;market&quot; /&gt;
+        &lt;/div&gt;                                &lt;/div&gt;
+                            &lt;/li&gt;
+                            &lt;li class=&quot;sort dd&quot;&gt;
+                                &lt;a href=&quot;#&quot; class=&quot;label&quot; id=&quot;sort&quot;&gt;Sort &lt;span class=&quot;dd-arrow&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+                                &lt;ul class=&quot;dropdown menu&quot; id=&quot;sort-bar&quot;&gt;
+                                    &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;deal-quality desc&quot; sortby=&quot;deal-quality&quot;&gt;&lt;span class=&quot;arrow&quot;&gt;&lt;/span&gt;by Deal Score&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;section&quot; sortby=&quot;section&quot;&gt;&lt;span class=&quot;arrow&quot;&gt;&lt;/span&gt;by Section&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;price&quot; sortby=&quot;price&quot;&gt;&lt;span class=&quot;arrow&quot;&gt;&lt;/span&gt;by Price&lt;/a&gt;&lt;/li&gt;
+                                    &lt;div class=&quot;deal-quality sort-help-button&quot;&gt;&lt;/div&gt;
+                                &lt;/ul&gt;
+                            &lt;/li&gt;
+
+                            &lt;!-- Share Buttons --&gt;
+                            &lt;li class=&quot;share-buttons&quot;&gt;
+                                &lt;div class=&quot;share share-email&quot;&gt;&lt;a id=&quot;share-email-button&quot; class=&quot;social_click&quot; social=&quot;email&quot; title=&quot;Email&quot;&gt;&lt;/a&gt;&lt;/div&gt;
+                                &lt;div class=&quot;share share-gp&quot;&gt;&lt;g:plusone size=&quot;medium&quot; count=&quot;false&quot;&gt;&lt;/g:plusone&gt;&lt;/div&gt;
+                                &lt;div class=&quot;share share-twitter&quot;&gt;&lt;a href=&quot;http://twitter.com/share&quot; class=&quot;twitter-share-button&quot; data-text=&quot;Searching for tickets to Miami Heat at New York Knicks @SeatGeek&quot; data-count=&quot;none&quot;&gt;&lt;/a&gt;&lt;/div&gt;
+                                &lt;div class=&quot;share share-fb&quot; id=&quot;fb-like-wrap&quot;&gt;&lt;/div&gt;
+                            &lt;/li&gt;
+                          &lt;/ul&gt;
+                        &lt;/div&gt;
+
+                        &lt;!-- Quantity Filter --&gt;
+                        &lt;div class=&quot;quantity-filter&quot;&gt;
+                          &lt;span&gt;How many tickets would you like?&lt;/span&gt;
+
+                          &lt;select id=&quot;quantity-initial&quot;&gt;
+                              &lt;option value=&quot;&quot;&gt;Any number&lt;/option&gt;
+                                                            &lt;option value=&quot;1&quot;&gt;
+                                  1                              &lt;/option&gt;
+                                                            &lt;option value=&quot;2&quot;&gt;
+                                  2                              &lt;/option&gt;
+                                                            &lt;option value=&quot;3&quot;&gt;
+                                  3                              &lt;/option&gt;
+                                                            &lt;option value=&quot;4&quot;&gt;
+                                  4                              &lt;/option&gt;
+                                                            &lt;option value=&quot;5&quot;&gt;
+                                  5                              &lt;/option&gt;
+                                                            &lt;option value=&quot;6&quot;&gt;
+                                  6                              &lt;/option&gt;
+                                                            &lt;option value=&quot;7&quot;&gt;
+                                  7                              &lt;/option&gt;
+                                                            &lt;option value=&quot;8&quot;&gt;
+                                  8                              &lt;/option&gt;
+                                                            &lt;option value=&quot;9&quot;&gt;
+                                  9                              &lt;/option&gt;
+                                                            &lt;option value=&quot;10&quot;&gt;10+&lt;/option&gt;
+                          &lt;/select&gt;
+                        &lt;/div&gt;
+
+                        &lt;!-- Listings Container --&gt;
+                        &lt;div class=&quot;scroll-wrapper&quot;&gt;
+                            &lt;div class=&quot;hide-sponsored-listings&quot;&gt;
+                              &lt;a href=&quot;#&quot; class=&quot;remove-filter&quot;&gt;x&lt;/a&gt;&amp;nbsp;&amp;nbsp;Showing only &lt;span class=&quot;market-full&quot;&gt;&lt;/span&gt; tickets
+                            &lt;/div&gt;
+                            &lt;div class=&quot;scroll ticket-container&quot;&gt;
+                                &lt;div id=&quot;ticket_list&quot; class=&quot;inner&quot;&gt;&lt;/div&gt;
+                                &lt;div id=&quot;other_links&quot;&gt;
+                                  &lt;p class=&quot;header&quot;&gt;&lt;strong&gt;Not what you're looking for?&lt;/strong&gt;&lt;/p&gt;
+                                  &lt;p&gt;
+                                                                          Find more &lt;a href=&quot;/miami-heat-tickets/&quot;&gt;Miami Heat&lt;/a&gt; at &lt;a href=&quot;/new-york-knicks-tickets/&quot;&gt;New York Knicks&lt;/a&gt; &lt;a href=&quot;/nba-tickets/&quot;&gt;tickets&lt;/a&gt;                                                                      &lt;/p&gt;
+
+                                                                      &lt;br /&gt;
+                                    &lt;p class=&quot;header&quot;&gt;&lt;strong&gt;Related Events:&lt;/strong&gt;&lt;/p&gt;
+                                                                          &lt;p&gt;&lt;a href=&quot;/hawks-knicks-tickets/2-22-2012-new-york-new-york-madison-square-garden/nba/759934/&quot;&gt;Hawks  Knicks tickets 02/22/2012&lt;/a&gt;&lt;/p&gt;
+                                                                          &lt;p&gt;&lt;a href=&quot;/knicks-heat-tickets/2-23-2012-miami-florida-american-airlines-arena/nba/760623/&quot;&gt;Knicks  Heat tickets 02/23/2012&lt;/a&gt;&lt;/p&gt;
+                                                                          &lt;p&gt;&lt;a href=&quot;/cavaliers-knicks-tickets/2-29-2012-new-york-new-york-madison-square-garden/nba/760097/&quot;&gt;Cavaliers  Knicks tickets 02/29/2012&lt;/a&gt;&lt;/p&gt;
+
+                                                                      &lt;p class=&quot;more-info&quot;&gt;&lt;a href=&quot;about:blank&quot;&gt;more event info&lt;/a&gt;&lt;/p&gt;
+                                                                  &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+
+
+    &lt;!-- Navigation --&gt;
+    &lt;div&gt;     &lt;div class=&quot;top-nav container&quot;&gt;
+
+        &lt;!-- Primary Navigation (logo, categories) --&gt;
+
+
+&lt;div class=&quot;nav-links left&quot; id=&quot;main-nav&quot;&gt;
+
+    &lt;!-- For larger screens --&gt;
+
+    &lt;ul class=&quot;tools nav-links-full tools-nav-links-full&quot;&gt;
+        &lt;li class=&quot;sgLogoContainer&quot;&gt;
+&lt;a href=&quot;/&quot; class=&quot;sgLogo sgLogo&quot; title=&quot;SeatGeek&quot;&gt;&lt;/a&gt;
+
+
+
+
+&lt;/li&gt;
+
+
+
+            &lt;li class=&quot;header-divider&quot;&gt;&lt;/li&gt;
+
+            &lt;li class=&quot;nav-link&quot;&gt;
+                &lt;a class=&quot;header-link&quot; href=&quot;/mlb-tickets/&quot;&gt;MLB&lt;/a&gt;      
+                &lt;div class=&quot;link-list&quot; id=&quot;mlb-link-list&quot;&gt;&lt;div class=&quot;link-list-inner&quot;&gt;
+
+                                            &lt;div class=&quot;column&quot;&gt;
+                        &lt;a href=&quot;/arizona-diamondbacks-tickets/&quot;&gt;Arizona Diamondbacks&lt;/a&gt;&lt;a href=&quot;/atlanta-braves-tickets/&quot;&gt;Atlanta Braves&lt;/a&gt;&lt;a href=&quot;/baltimore-orioles-tickets/&quot;&gt;Baltimore Orioles&lt;/a&gt;&lt;a href=&quot;/boston-red-sox-tickets/&quot;&gt;Boston Red Sox&lt;/a&gt;&lt;a href=&quot;/chicago-cubs-tickets/&quot;&gt;Chicago Cubs&lt;/a&gt;&lt;a href=&quot;/chicago-white-sox-tickets/&quot;&gt;Chicago White Sox&lt;/a&gt;&lt;a href=&quot;/cincinnati-reds-tickets/&quot;&gt;Cincinnati Reds&lt;/a&gt;&lt;a href=&quot;/cleveland-indians-tickets/&quot;&gt;Cleveland Indians&lt;/a&gt;&lt;a href=&quot;/colorado-rockies-tickets/&quot;&gt;Colorado Rockies&lt;/a&gt;&lt;a href=&quot;/detroit-tigers-tickets/&quot;&gt;Detroit Tigers&lt;/a&gt;&lt;a href=&quot;/houston-astros-tickets/&quot;&gt;Houston Astros&lt;/a&gt;&lt;a href=&quot;/kansas-city-royals-tickets/&quot;&gt;Kansas City Royals&lt;/a&gt;&lt;a href=&quot;/los-angeles-angels-tickets/&quot;&gt;Los Angeles Angels&lt;/a&gt;&lt;a href=&quot;/los-angeles-dodgers-tickets/&quot;&gt;Los Angeles Dodgers&lt;/a&gt;&lt;a href=&quot;/miami-marlins-tickets/&quot;&gt;Miami Marlins&lt;/a&gt;                        &lt;/div&gt;
+                                            &lt;div class=&quot;column&quot;&gt;
+                        &lt;a href=&quot;/milwaukee-brewers-tickets/&quot;&gt;Milwaukee Brewers&lt;/a&gt;&lt;a href=&quot;/minnesota-twins-tickets/&quot;&gt;Minnesota Twins&lt;/a&gt;&lt;a href=&quot;/new-york-mets-tickets/&quot;&gt;New York Mets&lt;/a&gt;&lt;a href=&quot;/new-york-yankees-tickets/&quot;&gt;New York Yankees&lt;/a&gt;&lt;a href=&quot;/oakland-athletics-tickets/&quot;&gt;Oakland Athletics&lt;/a&gt;&lt;a href=&quot;/philadelphia-phillies-tickets/&quot;&gt;Philadelphia Phillies&lt;/a&gt;&lt;a href=&quot;/pittsburgh-pirates-tickets/&quot;&gt;Pittsburgh Pirates&lt;/a&gt;&lt;a href=&quot;/san-diego-padres-tickets/&quot;&gt;San Diego Padres&lt;/a&gt;&lt;a href=&quot;/san-francisco-giants-tickets/&quot;&gt;San Francisco Giants&lt;/a&gt;&lt;a href=&quot;/seattle-mariners-tickets/&quot;&gt;Seattle Mariners&lt;/a&gt;&lt;a href=&quot;/st-louis-cardinals-tickets/&quot;&gt;St. Louis Cardinals&lt;/a&gt;&lt;a href=&quot;/tampa-bay-rays-tickets/&quot;&gt;Tampa Bay Rays&lt;/a&gt;&lt;a href=&quot;/texas-rangers-tickets/&quot;&gt;Texas Rangers&lt;/a&gt;&lt;a href=&quot;/toronto-blue-jays-tickets/&quot;&gt;Toronto Blue Jays&lt;/a&gt;&lt;a href=&quot;/washington-nationals-tickets/&quot;&gt;Washington Nationals&lt;/a&gt;                        &lt;/div&gt;
+
+                    &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+
+                &lt;/div&gt;&lt;div class=&quot;link-list-end&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+            &lt;/li&gt;
+
+
+
+            &lt;li class=&quot;header-divider&quot;&gt;&lt;/li&gt;
+
+            &lt;li class=&quot;nav-link&quot;&gt;
+                &lt;a class=&quot;header-link&quot; href=&quot;/nfl-tickets/&quot;&gt;NFL&lt;/a&gt;      
+                &lt;div class=&quot;link-list&quot; id=&quot;nfl-link-list&quot;&gt;&lt;div class=&quot;link-list-inner&quot;&gt;
+
+                                            &lt;div class=&quot;column&quot;&gt;
+                        &lt;a href=&quot;/arizona-cardinals-tickets/&quot;&gt;Arizona Cardinals&lt;/a&gt;&lt;a href=&quot;/atlanta-falcons-tickets/&quot;&gt;Atlanta Falcons&lt;/a&gt;&lt;a href=&quot;/baltimore-ravens-tickets/&quot;&gt;Baltimore Ravens&lt;/a&gt;&lt;a href=&quot;/buffalo-bills-tickets/&quot;&gt;Buffalo Bills&lt;/a&gt;&lt;a href=&quot;/carolina-panthers-tickets/&quot;&gt;Carolina Panthers&lt;/a&gt;&lt;a href=&quot;/chicago-bears-tickets/&quot;&gt;Chicago Bears&lt;/a&gt;&lt;a href=&quot;/cincinnati-bengals-tickets/&quot;&gt;Cincinnati Bengals&lt;/a&gt;&lt;a href=&quot;/cleveland-browns-tickets/&quot;&gt;Cleveland Browns&lt;/a&gt;&lt;a href=&quot;/dallas-cowboys-tickets/&quot;&gt;Dallas Cowboys&lt;/a&gt;&lt;a href=&quot;/denver-broncos-tickets/&quot;&gt;Denver Broncos&lt;/a&gt;&lt;a href=&quot;/detroit-lions-tickets/&quot;&gt;Detroit Lions&lt;/a&gt;&lt;a href=&quot;/green-bay-packers-tickets/&quot;&gt;Green Bay Packers&lt;/a&gt;&lt;a href=&quot;/houston-texans-tickets/&quot;&gt;Houston Texans&lt;/a&gt;&lt;a href=&quot;/indianapolis-colts-tickets/&quot;&gt;Indianapolis Colts&lt;/a&gt;&lt;a href=&quot;/jacksonville-jaguars-tickets/&quot;&gt;Jacksonville Jaguars&lt;/a&gt;&lt;a href=&quot;/kansas-city-chiefs-tickets/&quot;&gt;Kansas City Chiefs&lt;/a&gt;                        &lt;/div&gt;
+                                            &lt;div class=&quot;column&quot;&gt;
+                        &lt;a href=&quot;/miami-dolphins-tickets/&quot;&gt;Miami Dolphins&lt;/a&gt;&lt;a href=&quot;/minnesota-vikings-tickets/&quot;&gt;Minnesota Vikings&lt;/a&gt;&lt;a href=&quot;/new-england-patriots-tickets/&quot;&gt;New England Patriots&lt;/a&gt;&lt;a href=&quot;/new-orleans-saints-tickets/&quot;&gt;New Orleans Saints&lt;/a&gt;&lt;a href=&quot;/new-york-giants-tickets/&quot;&gt;New York Giants&lt;/a&gt;&lt;a href=&quot;/new-york-jets-tickets/&quot;&gt;New York Jets&lt;/a&gt;&lt;a href=&quot;/oakland-raiders-tickets/&quot;&gt;Oakland Raiders&lt;/a&gt;&lt;a href=&quot;/philadelphia-eagles-tickets/&quot;&gt;Philadelphia Eagles&lt;/a&gt;&lt;a href=&quot;/pittsburgh-steelers-tickets/&quot;&gt;Pittsburgh Steelers&lt;/a&gt;&lt;a href=&quot;/san-diego-chargers-tickets/&quot;&gt;San Diego Chargers&lt;/a&gt;&lt;a href=&quot;/san-francisco-49ers-tickets/&quot;&gt;San Francisco 49ers&lt;/a&gt;&lt;a href=&quot;/seattle-seahawks-tickets/&quot;&gt;Seattle Seahawks&lt;/a&gt;&lt;a href=&quot;/st-louis-rams-tickets/&quot;&gt;St Louis Rams&lt;/a&gt;&lt;a href=&quot;/tampa-bay-buccaneers-tickets/&quot;&gt;Tampa Bay Buccaneers&lt;/a&gt;&lt;a href=&quot;/tennessee-titans-tickets/&quot;&gt;Tennessee Titans&lt;/a&gt;&lt;a href=&quot;/washington-redskins-tickets/&quot;&gt;Washington Redskins&lt;/a&gt;                        &lt;/div&gt;
+
+                    &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+
+                &lt;/div&gt;&lt;div class=&quot;link-list-end&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+            &lt;/li&gt;
+
+
+
+            &lt;li class=&quot;header-divider&quot;&gt;&lt;/li&gt;
+
+            &lt;li class=&quot;nav-link&quot;&gt;
+                &lt;a class=&quot;header-link&quot; href=&quot;/nba-tickets/&quot;&gt;NBA&lt;/a&gt;      
+                &lt;div class=&quot;link-list&quot; id=&quot;nba-link-list&quot;&gt;&lt;div class=&quot;link-list-inner&quot;&gt;
+
+                                            &lt;div class=&quot;column&quot;&gt;
+                        &lt;a href=&quot;/atlanta-hawks-tickets/&quot;&gt;Atlanta Hawks&lt;/a&gt;&lt;a href=&quot;/boston-celtics-tickets/&quot;&gt;Boston Celtics&lt;/a&gt;&lt;a href=&quot;/charlotte-bobcats-tickets/&quot;&gt;Charlotte Bobcats&lt;/a&gt;&lt;a href=&quot;/chicago-bulls-tickets/&quot;&gt;Chicago Bulls&lt;/a&gt;&lt;a href=&quot;/cleveland-cavaliers-tickets/&quot;&gt;Cleveland Cavaliers&lt;/a&gt;&lt;a href=&quot;/dallas-mavericks-tickets/&quot;&gt;Dallas Mavericks&lt;/a&gt;&lt;a href=&quot;/denver-nuggets-tickets/&quot;&gt;Denver Nuggets&lt;/a&gt;&lt;a href=&quot;/detroit-pistons-tickets/&quot;&gt;Detroit Pistons&lt;/a&gt;&lt;a href=&quot;/golden-state-warriors-tickets/&quot;&gt;Golden State Warriors&lt;/a&gt;&lt;a href=&quot;/houston-rockets-tickets/&quot;&gt;Houston Rockets&lt;/a&gt;&lt;a href=&quot;/indiana-pacers-tickets/&quot;&gt;Indiana Pacers&lt;/a&gt;&lt;a href=&quot;/los-angeles-clippers-tickets/&quot;&gt;Los Angeles Clippers&lt;/a&gt;&lt;a href=&quot;/los-angeles-lakers-tickets/&quot;&gt;Los Angeles Lakers&lt;/a&gt;&lt;a href=&quot;/memphis-grizzlies-tickets/&quot;&gt;Memphis Grizzlies&lt;/a&gt;&lt;a href=&quot;/miami-heat-tickets/&quot;&gt;Miami Heat&lt;/a&gt;                        &lt;/div&gt;
+                                            &lt;div class=&quot;column&quot;&gt;
+                        &lt;a href=&quot;/milwaukee-bucks-tickets/&quot;&gt;Milwaukee Bucks&lt;/a&gt;&lt;a href=&quot;/minnesota-timberwolves-tickets/&quot;&gt;Minnesota Timberwolves&lt;/a&gt;&lt;a href=&quot;/new-jersey-nets-tickets/&quot;&gt;New Jersey Nets&lt;/a&gt;&lt;a href=&quot;/new-orleans-hornets-tickets/&quot;&gt;New Orleans Hornets&lt;/a&gt;&lt;a href=&quot;/new-york-knicks-tickets/&quot;&gt;New York Knicks&lt;/a&gt;&lt;a href=&quot;/oklahoma-city-thunder-tickets/&quot;&gt;Oklahoma City Thunder&lt;/a&gt;&lt;a href=&quot;/orlando-magic-tickets/&quot;&gt;Orlando Magic&lt;/a&gt;&lt;a href=&quot;/philadelphia-76ers-tickets/&quot;&gt;Philadelphia 76ers&lt;/a&gt;&lt;a href=&quot;/phoenix-suns-tickets/&quot;&gt;Phoenix Suns&lt;/a&gt;&lt;a href=&quot;/portland-trail-blazers-tickets/&quot;&gt;Portland Trail Blazers&lt;/a&gt;&lt;a href=&quot;/sacramento-kings-tickets/&quot;&gt;Sacramento Kings&lt;/a&gt;&lt;a href=&quot;/san-antonio-spurs-tickets/&quot;&gt;San Antonio Spurs&lt;/a&gt;&lt;a href=&quot;/toronto-raptors-tickets/&quot;&gt;Toronto Raptors&lt;/a&gt;&lt;a href=&quot;/utah-jazz-tickets/&quot;&gt;Utah Jazz&lt;/a&gt;&lt;a href=&quot;/washington-wizards-tickets/&quot;&gt;Washington Wizards&lt;/a&gt;                        &lt;/div&gt;
+
+                    &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+
+                &lt;/div&gt;&lt;div class=&quot;link-list-end&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+            &lt;/li&gt;
+
+
+
+            &lt;li class=&quot;header-divider&quot;&gt;&lt;/li&gt;
+
+            &lt;li class=&quot;nav-link&quot;&gt;
+                &lt;a class=&quot;header-link&quot; href=&quot;/nhl-tickets/&quot;&gt;NHL&lt;/a&gt;      
+                &lt;div class=&quot;link-list&quot; id=&quot;nhl-link-list&quot;&gt;&lt;div class=&quot;link-list-inner&quot;&gt;
+
+                                            &lt;div class=&quot;column&quot;&gt;
+                        &lt;a href=&quot;/anaheim-ducks-tickets/&quot;&gt;Anaheim Ducks&lt;/a&gt;&lt;a href=&quot;/boston-bruins-tickets/&quot;&gt;Boston Bruins&lt;/a&gt;&lt;a href=&quot;/buffalo-sabres-tickets/&quot;&gt;Buffalo Sabres&lt;/a&gt;&lt;a href=&quot;/calgary-flames-tickets/&quot;&gt;Calgary Flames&lt;/a&gt;&lt;a href=&quot;/carolina-hurricanes-tickets/&quot;&gt;Carolina Hurricanes&lt;/a&gt;&lt;a href=&quot;/chicago-blackhawks-tickets/&quot;&gt;Chicago Blackhawks&lt;/a&gt;&lt;a href=&quot;/colorado-avalanche-tickets/&quot;&gt;Colorado Avalanche&lt;/a&gt;&lt;a href=&quot;/columbus-blue-jackets-tickets/&quot;&gt;Columbus Blue Jackets&lt;/a&gt;&lt;a href=&quot;/dallas-stars-tickets/&quot;&gt;Dallas Stars&lt;/a&gt;&lt;a href=&quot;/detroit-red-wings-tickets/&quot;&gt;Detroit Red Wings&lt;/a&gt;&lt;a href=&quot;/edmonton-oilers-tickets/&quot;&gt;Edmonton Oilers&lt;/a&gt;&lt;a href=&quot;/florida-panthers-tickets/&quot;&gt;Florida Panthers&lt;/a&gt;&lt;a href=&quot;/los-angeles-kings-tickets/&quot;&gt;Los Angeles Kings&lt;/a&gt;&lt;a href=&quot;/minnesota-wild-tickets/&quot;&gt;Minnesota Wild&lt;/a&gt;&lt;a href=&quot;/montreal-canadiens-tickets/&quot;&gt;Montreal Canadiens&lt;/a&gt;                        &lt;/div&gt;
+                                            &lt;div class=&quot;column&quot;&gt;
+                        &lt;a href=&quot;/nashville-predators-tickets/&quot;&gt;Nashville Predators&lt;/a&gt;&lt;a href=&quot;/new-jersey-devils-tickets/&quot;&gt;New Jersey Devils&lt;/a&gt;&lt;a href=&quot;/new-york-islanders-tickets/&quot;&gt;New York Islanders&lt;/a&gt;&lt;a href=&quot;/new-york-rangers-tickets/&quot;&gt;New York Rangers&lt;/a&gt;&lt;a href=&quot;/ottawa-senators-tickets/&quot;&gt;Ottawa Senators&lt;/a&gt;&lt;a href=&quot;/philadelphia-flyers-tickets/&quot;&gt;Philadelphia Flyers&lt;/a&gt;&lt;a href=&quot;/phoenix-coyotes-tickets/&quot;&gt;Phoenix Coyotes&lt;/a&gt;&lt;a href=&quot;/pittsburgh-penguins-tickets/&quot;&gt;Pittsburgh Penguins&lt;/a&gt;&lt;a href=&quot;/san-jose-sharks-tickets/&quot;&gt;San Jose Sharks&lt;/a&gt;&lt;a href=&quot;/st-louis-blues-tickets/&quot;&gt;St. Louis Blues&lt;/a&gt;&lt;a href=&quot;/tampa-bay-lightning-tickets/&quot;&gt;Tampa Bay Lightning&lt;/a&gt;&lt;a href=&quot;/toronto-maple-leafs-tickets/&quot;&gt;Toronto Maple Leafs&lt;/a&gt;&lt;a href=&quot;/vancouver-canucks-tickets/&quot;&gt;Vancouver Canucks&lt;/a&gt;&lt;a href=&quot;/washington-capitals-tickets/&quot;&gt;Washington Capitals&lt;/a&gt;&lt;a href=&quot;/winnipeg-jets-tickets/&quot;&gt;Winnipeg Jets&lt;/a&gt;                        &lt;/div&gt;
+
+                    &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+
+                &lt;/div&gt;&lt;div class=&quot;link-list-end&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+            &lt;/li&gt;
+
+
+
+            &lt;li class=&quot;header-divider&quot;&gt;&lt;/li&gt;
+
+            &lt;li class=&quot;nav-link&quot;&gt;
+                &lt;a class=&quot;header-link&quot; href=&quot;/concert-tickets/&quot;&gt;Concerts&lt;/a&gt;      
+                &lt;div class=&quot;link-list&quot; id=&quot;concerts-link-list&quot;&gt;&lt;div class=&quot;link-list-inner&quot;&gt;
+
+                                            &lt;div class=&quot;column&quot;&gt;
+                        &lt;a href=&quot;/celine-dion-tickets/&quot;&gt;Celine Dion&lt;/a&gt;&lt;a href=&quot;/roger-waters-tickets/&quot;&gt;Roger Waters&lt;/a&gt;&lt;a href=&quot;/tim-mcgraw-tickets/&quot;&gt;Tim McGraw&lt;/a&gt;&lt;a href=&quot;/kenny-chesney-tickets/&quot;&gt;Kenny Chesney&lt;/a&gt;&lt;a href=&quot;/elton-john-tickets/&quot;&gt;Elton John&lt;/a&gt;&lt;a href=&quot;/neil-diamond-tickets/&quot;&gt;Neil Diamond&lt;/a&gt;                        &lt;/div&gt;
+                                            &lt;div class=&quot;column&quot;&gt;
+                        &lt;a href=&quot;/kelly-clarkson-tickets/&quot;&gt;Kelly Clarkson&lt;/a&gt;&lt;a href=&quot;/george-strait-tickets/&quot;&gt;George Strait&lt;/a&gt;&lt;a href=&quot;/lady-antebellum-tickets/&quot;&gt;Lady Antebellum&lt;/a&gt;&lt;a href=&quot;/radiohead-tickets/&quot;&gt;Radiohead&lt;/a&gt;&lt;a class=&quot;blank&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;a href=&quot;/concert-tickets/&quot;&gt;More Concerts &amp;rarr;&lt;/a&gt;                        &lt;/div&gt;
+
+                    &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+
+                &lt;/div&gt;&lt;div class=&quot;link-list-end&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+            &lt;/li&gt;
+
+
+        &lt;li class=&quot;header-divider&quot;&gt;&lt;/li&gt;
+
+        &lt;li class=&quot;nav-link more-links&quot;&gt;
+            &lt;span class=&quot;header-link&quot;&gt;More&lt;/span&gt;
+
+            &lt;div class=&quot;link-list more-link-list&quot; id=&quot;more-link-list&quot;&gt;&lt;div class=&quot;link-list-inner&quot;&gt;
+
+                &lt;div class=&quot;column-description&quot;&gt;
+                                                                    &lt;a class=&quot;hover current first&quot; attached=&quot;ncaa_football&quot; href=&quot;/ncaa-football-tickets/&quot;&gt;NCAA FB&lt;/a&gt;                                                                    &lt;a class=&quot;hover&quot; attached=&quot;ncaa_basketball&quot; href=&quot;/ncaa-basketball-tickets/&quot;&gt;NCAA BB&lt;/a&gt;                                                                    &lt;a class=&quot;hover&quot; attached=&quot;theater&quot; href=&quot;/theater-tickets/&quot;&gt;Theater&lt;/a&gt;                                                                    &lt;a class=&quot;hover&quot; attached=&quot;bloomberg&quot; href=&quot;/dnya-project/&quot;&gt;NYC Arts&lt;/a&gt;                                                                    &lt;a class=&quot;hover&quot; attached=&quot;fight&quot; href=&quot;/fighting-tickets/&quot;&gt;Fighting&lt;/a&gt;                                                                    &lt;a class=&quot;hover&quot; attached=&quot;tennis&quot; href=&quot;/tennis-tickets/&quot;&gt;Tennis&lt;/a&gt;                                                                    &lt;a class=&quot;hover&quot; attached=&quot;golf&quot; href=&quot;/golf-tickets/&quot;&gt;Golf&lt;/a&gt;                                                                    &lt;a class=&quot;hover&quot; attached=&quot;auto_racing&quot; href=&quot;/auto-racing-tickets/&quot;&gt;Racing&lt;/a&gt;                                                                    &lt;a class=&quot;hover&quot; attached=&quot;soccer&quot; href=&quot;/soccer-tickets/&quot;&gt;Soccer&lt;/a&gt;                                                                    &lt;a class=&quot;hover&quot; attached=&quot;comedy&quot; href=&quot;/comedy-tickets/&quot;&gt;Comedy&lt;/a&gt;                                                                    &lt;a class=&quot;hover&quot; attached=&quot;family&quot; href=&quot;/family-tickets/&quot;&gt;Family&lt;/a&gt;                                    &lt;/div&gt;
+
+                &lt;div class=&quot;column-list column&quot;&gt;
+                                                                                            &lt;span id=&quot;ncaa_football-hover-list&quot; class=&quot;hover-list&quot; attached=&quot;ncaa_football&quot;&gt;
+                                                            &lt;a href=&quot;/alabama-crimson-tide-football-tickets/&quot;&gt;Alabama&lt;/a&gt;                                                            &lt;a href=&quot;/michigan-wolverines-football-tickets/&quot;&gt;Michigan&lt;/a&gt;                                                            &lt;a href=&quot;/florida-gators-football-tickets/&quot;&gt;Florida&lt;/a&gt;                                                            &lt;a href=&quot;/ohio-state-buckeyes-football-tickets/&quot;&gt;Ohio State&lt;/a&gt;                                                            &lt;a href=&quot;/auburn-tigers-football-tickets/&quot;&gt;Auburn&lt;/a&gt;                                                            &lt;a href=&quot;/penn-state-nittany-lions-football-tickets/&quot;&gt;Penn State&lt;/a&gt;                                                            &lt;a href=&quot;/texas-longhorns-football-tickets/&quot;&gt;Texas Longhorns&lt;/a&gt;                                                            &lt;a href=&quot;/wisconsin-badgers-football-tickets/&quot;&gt;Wisconsin&lt;/a&gt;                                                            &lt;a href=&quot;/florida-gators-football-tickets/&quot;&gt;Florida&lt;/a&gt;                                                            &lt;a href=&quot;/ncaa-football-tickets/&quot;&gt;More College Football &amp;rarr;&lt;/a&gt;                                                    &lt;/span&gt;
+                                                                                            &lt;span id=&quot;ncaa_basketball-hover-list&quot; class=&quot;hover-list&quot; attached=&quot;ncaa_basketball&quot; style=&quot;display: none;&quot;&gt;
+                                                            &lt;a href=&quot;/north-carolina-tar-heels-basketball-tickets/&quot;&gt;NC State&lt;/a&gt;                                                            &lt;a href=&quot;/michigan-state-spartans-basketball-tickets/&quot;&gt;Michigan State&lt;/a&gt;                                                            &lt;a href=&quot;/kentucky-wildcats-basketball-tickets/&quot;&gt;Kentucky&lt;/a&gt;                                                            &lt;a href=&quot;/kansas-jayhawks-basketball-tickets/&quot;&gt;Kansas&lt;/a&gt;                                                            &lt;a href=&quot;/duke-blue-devils-basketball-tickets/&quot;&gt;Duke&lt;/a&gt;                                                            &lt;a href=&quot;/connecticut-huskies-basketball-tickets/&quot;&gt;UConn&lt;/a&gt;                                                            &lt;a href=&quot;/notre-dame-fighting-irish-basketball-tickets/&quot;&gt;Notre Dame&lt;/a&gt;                                                            &lt;a href=&quot;/ohio-state-buckeyes-basketball-tickets/&quot;&gt;Ohio State&lt;/a&gt;                                                            &lt;a href=&quot;/georgetown-hoyas-basketball-tickets/&quot;&gt;Georgetown&lt;/a&gt;                                                            &lt;a href=&quot;/ncaa-basketball-tickets/&quot;&gt;More College Basketball &amp;rarr;&lt;/a&gt;                                                    &lt;/span&gt;
+                                                                                            &lt;span id=&quot;theater-hover-list&quot; class=&quot;hover-list&quot; attached=&quot;theater&quot; style=&quot;display: none;&quot;&gt;
+                                                            &lt;a href=&quot;/radio-city-christmas-spectacular-tickets/&quot;&gt;Radio City Christmas&lt;/a&gt;                                                            &lt;a href=&quot;/lion-king-tickets/&quot;&gt;Lion King&lt;/a&gt;                                                            &lt;a href=&quot;/wicked-tickets/&quot;&gt;Wicked&lt;/a&gt;                                                            &lt;a href=&quot;/west-side-story-tickets/&quot;&gt;West Side Story&lt;/a&gt;                                                            &lt;a href=&quot;/billy-elliot-tickets/&quot;&gt;Billy Elliot&lt;/a&gt;                                                            &lt;a href=&quot;/jersey-boys-tickets/&quot;&gt;Jersey Boys&lt;/a&gt;                                                            &lt;a href=&quot;/cirque-du-soleil-tickets/&quot;&gt;Cirque Du Soleil&lt;/a&gt;                                                            &lt;a href=&quot;/rock-of-ages-tickets/&quot;&gt;Rock of Ages&lt;/a&gt;                                                            &lt;a href=&quot;/hair-tickets/&quot;&gt;Hair&lt;/a&gt;                                                            &lt;a href=&quot;/theater-tickets/&quot;&gt;More Theater &amp;rarr;&lt;/a&gt;                                                    &lt;/span&gt;
+                                                                                            &lt;span id=&quot;bloomberg-hover-list&quot; class=&quot;hover-list&quot; attached=&quot;bloomberg&quot; style=&quot;display: none;&quot;&gt;
+                                                            &lt;a href=&quot;/abingdon-theatre-company-2-tickets/&quot;&gt;Abingdon Theater&lt;/a&gt;                                                            &lt;a href=&quot;/dance-theatre-of-harlem-tickets/&quot;&gt;Dance Theatre of Harlem&lt;/a&gt;                                                            &lt;a href=&quot;/danspace-project-2-tickets/&quot;&gt;Danspace Project&lt;/a&gt;                                                            &lt;a href=&quot;/ethel-tickets/&quot;&gt;Ethel&lt;/a&gt;                                                            &lt;a href=&quot;/evidence-dance-tickets/&quot;&gt;Evidence Dance&lt;/a&gt;                                                            &lt;a href=&quot;/film-forum-2-tickets/&quot;&gt;Film Forum&lt;/a&gt;                                                            &lt;a href=&quot;/harlem-stage-tickets/&quot;&gt;Harlem Stage&lt;/a&gt;                                                            &lt;a href=&quot;/here-tickets/&quot;&gt;HERE&lt;/a&gt;                                                            &lt;a href=&quot;/irondale-tickets/&quot;&gt;Irondale&lt;/a&gt;                                                            &lt;a href=&quot;/dnya-project/&quot;&gt;more NYC events &amp;rarr;&lt;/a&gt;                                                    &lt;/span&gt;
+                                                                                            &lt;span id=&quot;fight-hover-list&quot; class=&quot;hover-list&quot; attached=&quot;fight&quot; style=&quot;display: none;&quot;&gt;
+                                                            &lt;a href=&quot;/ufc-tickets/&quot;&gt;UFC&lt;/a&gt;                                                            &lt;a href=&quot;/boxing-tickets/&quot;&gt;Boxing&lt;/a&gt;                                                            &lt;a href=&quot;/strikeforce-tickets/&quot;&gt;Strikeforce&lt;/a&gt;                                                            &lt;a href=&quot;/bellator-fighting-championships-tickets/&quot;&gt;Bellator Fighting Championships&lt;/a&gt;                                                            &lt;a href=&quot;/mixed-martial-arts-mma-tickets/&quot;&gt;Mixed Martial Arts (MMA)&lt;/a&gt;                                                            &lt;a href=&quot;/fighting-tickets/&quot;&gt;More Fighting events &amp;rarr;&lt;/a&gt;                                                    &lt;/span&gt;
+                                                                                            &lt;span id=&quot;tennis-hover-list&quot; class=&quot;hover-list&quot; attached=&quot;tennis&quot; style=&quot;display: none;&quot;&gt;
+                                                            &lt;a href=&quot;/us-open-tennis-championship-tickets/&quot;&gt;US Open Championship&lt;/a&gt;                                                            &lt;a href=&quot;/davis-cup-tickets/&quot;&gt;Davis Cup&lt;/a&gt;                                                            &lt;a href=&quot;/sony-ericsson-open-miami-tickets/&quot;&gt;Sony Ericsson Open&lt;/a&gt;                                                            &lt;a href=&quot;/bnp-paribas-open-tickets/&quot;&gt;BNP Paribas Open&lt;/a&gt;                                                            &lt;a href=&quot;/champions-cup-tickets/&quot;&gt;Champions Cup&lt;/a&gt;                                                            &lt;a href=&quot;/pilot-pen-tennis-championship-new-haven-tickets/&quot;&gt;Pilot Pen Championship&lt;/a&gt;                                                            &lt;a href=&quot;/la-tennis-open-tickets/&quot;&gt;LA Tennis Open&lt;/a&gt;                                                            &lt;a href=&quot;/rogers-cup-toronto-tickets/&quot;&gt;Rogers Cup&lt;/a&gt;                                                            &lt;a href=&quot;/tennis-tickets/&quot;&gt;More Tennis &amp;rarr;&lt;/a&gt;                                                    &lt;/span&gt;
+                                                                                            &lt;span id=&quot;golf-hover-list&quot; class=&quot;hover-list&quot; attached=&quot;golf&quot; style=&quot;display: none;&quot;&gt;
+                                                            &lt;a href=&quot;/masters-tickets/&quot;&gt;Masters&lt;/a&gt;                                                            &lt;a href=&quot;/us-open-golf-tickets/&quot;&gt;US Open&lt;/a&gt;                                                            &lt;a href=&quot;/british-open-tickets/&quot;&gt;British Open&lt;/a&gt;                                                            &lt;a href=&quot;/pga-championship-tickets/&quot;&gt;PGA Championship&lt;/a&gt;                                                            &lt;a href=&quot;/lpga-championship-tickets/&quot;&gt;LPGA Championship&lt;/a&gt;                                                            &lt;a href=&quot;/the-barclays-golf-tickets/&quot;&gt;The Barclays&lt;/a&gt;                                                            &lt;a href=&quot;/world-golf-championships-tickets/&quot;&gt;World Golf Championships&lt;/a&gt;                                                            &lt;a href=&quot;/arnold-palmer-invitational-tickets/&quot;&gt;Arnold Palmer Invitational&lt;/a&gt;                                                            &lt;a href=&quot;/bridgestone-invitational-tickets/&quot;&gt;Bridgestone Invitational&lt;/a&gt;                                                            &lt;a href=&quot;/golf-tickets/&quot;&gt;More Golf &amp;rarr;&lt;/a&gt;                                                    &lt;/span&gt;
+                                                                                            &lt;span id=&quot;auto_racing-hover-list&quot; class=&quot;hover-list&quot; attached=&quot;auto_racing&quot; style=&quot;display: none;&quot;&gt;
+                                                            &lt;a href=&quot;/nascar-sprint-cup-tickets/&quot;&gt;NASCAR Sprintcup&lt;/a&gt;                                                            &lt;a href=&quot;/nascar-nationwide-series-tickets/&quot;&gt;NASCAR Nationwide&lt;/a&gt;                                                            &lt;a href=&quot;/indycar-tickets/&quot;&gt;IndyCar&lt;/a&gt;                                                            &lt;a href=&quot;/monster-truck-tickets/&quot;&gt;Monster Truck&lt;/a&gt;                                                            &lt;a href=&quot;/motocross-tickets/&quot;&gt;Motocross&lt;/a&gt;                                                            &lt;a href=&quot;/f1-tickets/&quot;&gt;F1&lt;/a&gt;                                                            &lt;a href=&quot;/auto-racing-tickets/&quot;&gt;More Racing &amp;rarr;&lt;/a&gt;                                                    &lt;/span&gt;
+                                                                                            &lt;span id=&quot;soccer-hover-list&quot; class=&quot;hover-list&quot; attached=&quot;soccer&quot; style=&quot;display: none;&quot;&gt;
+                                                            &lt;a href=&quot;/chivas-usa-tickets/&quot;&gt;Chivas USA&lt;/a&gt;                                                            &lt;a href=&quot;/dc-united-tickets/&quot;&gt;DC United&lt;/a&gt;                                                            &lt;a href=&quot;/fc-dallas-tickets/&quot;&gt;FC Dallas&lt;/a&gt;                                                            &lt;a href=&quot;/houston-dynamo-tickets/&quot;&gt;Houston Dynamo&lt;/a&gt;                                                            &lt;a href=&quot;/la-galaxy-tickets/&quot;&gt;LA Galaxy&lt;/a&gt;                                                            &lt;a href=&quot;/new-york-red-bulls-tickets/&quot;&gt;New York Red Bulls&lt;/a&gt;                                                            &lt;a href=&quot;/san-jose-earthquakes-tickets/&quot;&gt;San Jose Earthquakes&lt;/a&gt;                                                            &lt;a href=&quot;/seattle-sounders-fc-tickets/&quot;&gt;Seattle Sounders&lt;/a&gt;                                                            &lt;a href=&quot;/toronto-fc-tickets/&quot;&gt;Toronto FC&lt;/a&gt;                                                            &lt;a href=&quot;/soccer-tickets/&quot;&gt;More Soccer &amp;rarr;&lt;/a&gt;                                                    &lt;/span&gt;
+                                                                                            &lt;span id=&quot;comedy-hover-list&quot; class=&quot;hover-list&quot; attached=&quot;comedy&quot; style=&quot;display: none;&quot;&gt;
+                                                            &lt;a href=&quot;/jerry-seinfeld-tickets/&quot;&gt;Jerry Seinfeld&lt;/a&gt;                                                            &lt;a href=&quot;/daniel-tosh-tickets/&quot;&gt;Daniel Tosh&lt;/a&gt;                                                            &lt;a href=&quot;/mike-epps-tickets/&quot;&gt;Mike Epps&lt;/a&gt;                                                            &lt;a href=&quot;/jeff-foxworthy-tickets/&quot;&gt;Jeff Foxworthy&lt;/a&gt;                                                            &lt;a href=&quot;/bill-maher-tickets/&quot;&gt;Bill Maher&lt;/a&gt;                                                            &lt;a href=&quot;/george-lopez-tickets/&quot;&gt;George Lopez&lt;/a&gt;                                                            &lt;a href=&quot;/louis-c-k-tickets/&quot;&gt;Louis C.K.&lt;/a&gt;                                                            &lt;a href=&quot;/bill-engvall-tickets/&quot;&gt;Bill Engvall&lt;/a&gt;                                                            &lt;a href=&quot;/the-daily-show-tickets/&quot;&gt;The Daily Show&lt;/a&gt;                                                            &lt;a href=&quot;/comedy-tickets/&quot;&gt;More Comedy &amp;rarr;&lt;/a&gt;                                                    &lt;/span&gt;
+                                                                                            &lt;span id=&quot;family-hover-list&quot; class=&quot;hover-list&quot; attached=&quot;family&quot; style=&quot;display: none;&quot;&gt;
+                                                            &lt;a href=&quot;/barney-live-tickets/&quot;&gt;Barney Live&lt;/a&gt;                                                            &lt;a href=&quot;/sesame-street-live-tickets/&quot;&gt;Sesame Street Live&lt;/a&gt;                                                            &lt;a href=&quot;/cinderella-theatre-tickets/&quot;&gt;Cinderella Theater&lt;/a&gt;                                                            &lt;a href=&quot;/ringling-bros-and-barnum-and-bailey-circus-tickets/&quot;&gt;Ringling Bros Circus&lt;/a&gt;                                                            &lt;a href=&quot;/wonderland-tickets/&quot;&gt;Wonderland&lt;/a&gt;                                                            &lt;a href=&quot;/universoul-circus-tour-tickets/&quot;&gt;UniverSoul Circus Tour&lt;/a&gt;                                                            &lt;a href=&quot;/disney-tour-tickets/&quot;&gt;Disney Tour&lt;/a&gt;                                                            &lt;a href=&quot;/yo-gabba-gabba-national-tour-tickets/&quot;&gt;Yo Gabba Gabba&lt;/a&gt;                                                            &lt;a href=&quot;/gazillion-bubble-show-tour-tickets/&quot;&gt;Gazillion Bubble Show Tour&lt;/a&gt;                                                            &lt;a href=&quot;/family-tickets/&quot;&gt;More Family Events &amp;rarr;&lt;/a&gt;                                                    &lt;/span&gt;
+                                    &lt;/div&gt;
+                &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            &lt;/div&gt;&lt;div class=&quot;link-list-end&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+        &lt;/li&gt;
+
+        &lt;li class=&quot;header-divider&quot;&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+
+
+    &lt;!-- For those with smaller screens --&gt;
+
+    &lt;ul class=&quot;tools nav-links-condensed tools-nav-links-condensed&quot; style=&quot;display: none;&quot;&gt;
+      &lt;li class=&quot;sgLogoContainer&quot;&gt;
+&lt;a href=&quot;/&quot; class=&quot;sgLogo sgLogo&quot; title=&quot;SeatGeek&quot;&gt;&lt;/a&gt;
+
+
+
+
+&lt;/li&gt;
+
+      &lt;li class=&quot;header-divider&quot;&gt;&lt;/li&gt;
+
+        &lt;li class=&quot;nav-link more-links&quot;&gt;
+            &lt;span class=&quot;header-link&quot;&gt;Find Tickets&lt;/span&gt;
+            &lt;div class=&quot;link-list more-link-list&quot; id=&quot;more-link-list2&quot;&gt;&lt;div class=&quot;link-list-inner&quot;&gt;  
+
+                &lt;!-- Headers --&gt;
+
+                &lt;div class=&quot;column-description&quot;&gt;
+                                                                                            &lt;a class=&quot;hover current first2&quot; attached=&quot;mlb&quot; href=&quot;/mlb-tickets/&quot;&gt;MLB&lt;/a&gt;                                                                                            &lt;a class=&quot;hover&quot; attached=&quot;nfl&quot; href=&quot;/nfl-tickets/&quot;&gt;NFL&lt;/a&gt;                                                                                            &lt;a class=&quot;hover&quot; attached=&quot;nba&quot; href=&quot;/nba-tickets/&quot;&gt;NBA&lt;/a&gt;                                                                                            &lt;a class=&quot;hover&quot; attached=&quot;nhl&quot; href=&quot;/nhl-tickets/&quot;&gt;NHL&lt;/a&gt;                                                                                            &lt;a class=&quot;hover&quot; attached=&quot;concerts&quot; href=&quot;/concert-tickets/&quot;&gt;Concerts&lt;/a&gt;                            
+                                                                    &lt;a class=&quot;hover&quot; attached=&quot;ncaa_football2&quot; href=&quot;/ncaa-football-tickets/&quot;&gt;NCAA FB&lt;/a&gt;                                                                    &lt;a class=&quot;hover&quot; attached=&quot;ncaa_basketball2&quot; href=&quot;/ncaa-basketball-tickets/&quot;&gt;NCAA BB&lt;/a&gt;                                                                    &lt;a class=&quot;hover&quot; attached=&quot;theater2&quot; href=&quot;/theater-tickets/&quot;&gt;Theater&lt;/a&gt;                                                                    &lt;a class=&quot;hover&quot; attached=&quot;bloomberg2&quot; href=&quot;/dnya-project/&quot;&gt;NYC Arts&lt;/a&gt;                                                                    &lt;a class=&quot;hover&quot; attached=&quot;fight2&quot; href=&quot;/fighting-tickets/&quot;&gt;Fighting&lt;/a&gt;                                                                    &lt;a class=&quot;hover&quot; attached=&quot;tennis2&quot; href=&quot;/tennis-tickets/&quot;&gt;Tennis&lt;/a&gt;                                                                    &lt;a class=&quot;hover&quot; attached=&quot;golf2&quot; href=&quot;/golf-tickets/&quot;&gt;Golf&lt;/a&gt;                                                                    &lt;a class=&quot;hover&quot; attached=&quot;auto_racing2&quot; href=&quot;/auto-racing-tickets/&quot;&gt;Racing&lt;/a&gt;                                                                    &lt;a class=&quot;hover&quot; attached=&quot;soccer2&quot; href=&quot;/soccer-tickets/&quot;&gt;Soccer&lt;/a&gt;                                                                    &lt;a class=&quot;hover&quot; attached=&quot;comedy2&quot; href=&quot;/comedy-tickets/&quot;&gt;Comedy&lt;/a&gt;                                                                    &lt;a class=&quot;hover&quot; attached=&quot;family2&quot; href=&quot;/family-tickets/&quot;&gt;Family&lt;/a&gt;                                    &lt;/div&gt;
+
+                &lt;!-- Teams --&gt;
+
+                &lt;div class=&quot;column-list column&quot;&gt;
+
+
+                    &lt;!-- Regular Dropdowns --&gt;
+
+                        &lt;span id=&quot;mlb-hover-list&quot; class=&quot;hover-list&quot; attached=&quot;mlb&quot;&gt;
+                                                            &lt;a href=&quot;/arizona-diamondbacks-tickets/&quot;&gt;Arizona Diamondbacks&lt;/a&gt;                                                            &lt;a href=&quot;/atlanta-braves-tickets/&quot;&gt;Atlanta Braves&lt;/a&gt;                                                            &lt;a href=&quot;/baltimore-orioles-tickets/&quot;&gt;Baltimore Orioles&lt;/a&gt;                                                            &lt;a href=&quot;/boston-red-sox-tickets/&quot;&gt;Boston Red Sox&lt;/a&gt;                                                            &lt;a href=&quot;/chicago-cubs-tickets/&quot;&gt;Chicago Cubs&lt;/a&gt;                                                            &lt;a href=&quot;/chicago-white-sox-tickets/&quot;&gt;Chicago White Sox&lt;/a&gt;                                                            &lt;a href=&quot;/cincinnati-reds-tickets/&quot;&gt;Cincinnati Reds&lt;/a&gt;                                                            &lt;a href=&quot;/cleveland-indians-tickets/&quot;&gt;Cleveland Indians&lt;/a&gt;                                                            &lt;a href=&quot;/colorado-rockies-tickets/&quot;&gt;Colorado Rockies&lt;/a&gt;                                                            &lt;a href=&quot;/detroit-tigers-tickets/&quot;&gt;Detroit Tigers&lt;/a&gt;                                                            &lt;a href=&quot;/houston-astros-tickets/&quot;&gt;Houston Astros&lt;/a&gt;                                                            &lt;a href=&quot;/kansas-city-royals-tickets/&quot;&gt;Kansas City Royals&lt;/a&gt;                                                            &lt;a href=&quot;/los-angeles-angels-tickets/&quot;&gt;Los Angeles Angels&lt;/a&gt;                                                            &lt;a href=&quot;/los-angeles-dodgers-tickets/&quot;&gt;Los Angeles Dodgers&lt;/a&gt;                                                            &lt;a href=&quot;/miami-marlins-tickets/&quot;&gt;Miami Marlins&lt;/a&gt;                                                            &lt;a href=&quot;/milwaukee-brewers-tickets/&quot;&gt;Milwaukee Brewers&lt;/a&gt;                                                            &lt;a href=&quot;/minnesota-twins-tickets/&quot;&gt;Minnesota Twins&lt;/a&gt;                                                            &lt;a href=&quot;/new-york-mets-tickets/&quot;&gt;New York Mets&lt;/a&gt;                                                            &lt;a href=&quot;/new-york-yankees-tickets/&quot;&gt;New York Yankees&lt;/a&gt;                                                            &lt;a href=&quot;/oakland-athletics-tickets/&quot;&gt;Oakland Athletics&lt;/a&gt;                                                            &lt;a href=&quot;/philadelphia-phillies-tickets/&quot;&gt;Philadelphia Phillies&lt;/a&gt;                                                            &lt;a href=&quot;/pittsburgh-pirates-tickets/&quot;&gt;Pittsburgh Pirates&lt;/a&gt;                                                            &lt;a href=&quot;/san-diego-padres-tickets/&quot;&gt;San Diego Padres&lt;/a&gt;                                                            &lt;a href=&quot;/san-francisco-giants-tickets/&quot;&gt;San Francisco Giants&lt;/a&gt;                                                            &lt;a href=&quot;/seattle-mariners-tickets/&quot;&gt;Seattle Mariners&lt;/a&gt;                                                            &lt;a href=&quot;/st-louis-cardinals-tickets/&quot;&gt;St. Louis Cardinals&lt;/a&gt;                                                            &lt;a href=&quot;/tampa-bay-rays-tickets/&quot;&gt;Tampa Bay Rays&lt;/a&gt;                                                            &lt;a href=&quot;/texas-rangers-tickets/&quot;&gt;Texas Rangers&lt;/a&gt;                                                            &lt;a href=&quot;/toronto-blue-jays-tickets/&quot;&gt;Toronto Blue Jays&lt;/a&gt;                                                            &lt;a href=&quot;/washington-nationals-tickets/&quot;&gt;Washington Nationals&lt;/a&gt;                                                    &lt;/span&gt;
+
+                        &lt;span id=&quot;nfl-hover-list&quot; class=&quot;hover-list&quot; attached=&quot;nfl&quot; style=&quot;display: none;&quot;&gt;
+                                                            &lt;a href=&quot;/arizona-cardinals-tickets/&quot;&gt;Arizona Cardinals&lt;/a&gt;                                                            &lt;a href=&quot;/atlanta-falcons-tickets/&quot;&gt;Atlanta Falcons&lt;/a&gt;                                                            &lt;a href=&quot;/baltimore-ravens-tickets/&quot;&gt;Baltimore Ravens&lt;/a&gt;                                                            &lt;a href=&quot;/buffalo-bills-tickets/&quot;&gt;Buffalo Bills&lt;/a&gt;                                                            &lt;a href=&quot;/carolina-panthers-tickets/&quot;&gt;Carolina Panthers&lt;/a&gt;                                                            &lt;a href=&quot;/chicago-bears-tickets/&quot;&gt;Chicago Bears&lt;/a&gt;                                                            &lt;a href=&quot;/cincinnati-bengals-tickets/&quot;&gt;Cincinnati Bengals&lt;/a&gt;                                                            &lt;a href=&quot;/cleveland-browns-tickets/&quot;&gt;Cleveland Browns&lt;/a&gt;                                                            &lt;a href=&quot;/dallas-cowboys-tickets/&quot;&gt;Dallas Cowboys&lt;/a&gt;                                                            &lt;a href=&quot;/denver-broncos-tickets/&quot;&gt;Denver Broncos&lt;/a&gt;                                                            &lt;a href=&quot;/detroit-lions-tickets/&quot;&gt;Detroit Lions&lt;/a&gt;                                                            &lt;a href=&quot;/green-bay-packers-tickets/&quot;&gt;Green Bay Packers&lt;/a&gt;                                                            &lt;a href=&quot;/houston-texans-tickets/&quot;&gt;Houston Texans&lt;/a&gt;                                                            &lt;a href=&quot;/indianapolis-colts-tickets/&quot;&gt;Indianapolis Colts&lt;/a&gt;                                                            &lt;a href=&quot;/jacksonville-jaguars-tickets/&quot;&gt;Jacksonville Jaguars&lt;/a&gt;                                                            &lt;a href=&quot;/kansas-city-chiefs-tickets/&quot;&gt;Kansas City Chiefs&lt;/a&gt;                                                            &lt;a href=&quot;/miami-dolphins-tickets/&quot;&gt;Miami Dolphins&lt;/a&gt;                                                            &lt;a href=&quot;/minnesota-vikings-tickets/&quot;&gt;Minnesota Vikings&lt;/a&gt;                                                            &lt;a href=&quot;/new-england-patriots-tickets/&quot;&gt;New England Patriots&lt;/a&gt;                                                            &lt;a href=&quot;/new-orleans-saints-tickets/&quot;&gt;New Orleans Saints&lt;/a&gt;                                                            &lt;a href=&quot;/new-york-giants-tickets/&quot;&gt;New York Giants&lt;/a&gt;                                                            &lt;a href=&quot;/new-york-jets-tickets/&quot;&gt;New York Jets&lt;/a&gt;                                                            &lt;a href=&quot;/oakland-raiders-tickets/&quot;&gt;Oakland Raiders&lt;/a&gt;                                                            &lt;a href=&quot;/philadelphia-eagles-tickets/&quot;&gt;Philadelphia Eagles&lt;/a&gt;                                                            &lt;a href=&quot;/pittsburgh-steelers-tickets/&quot;&gt;Pittsburgh Steelers&lt;/a&gt;                                                            &lt;a href=&quot;/san-diego-chargers-tickets/&quot;&gt;San Diego Chargers&lt;/a&gt;                                                            &lt;a href=&quot;/san-francisco-49ers-tickets/&quot;&gt;San Francisco 49ers&lt;/a&gt;                                                            &lt;a href=&quot;/seattle-seahawks-tickets/&quot;&gt;Seattle Seahawks&lt;/a&gt;                                                            &lt;a href=&quot;/st-louis-rams-tickets/&quot;&gt;St Louis Rams&lt;/a&gt;                                                            &lt;a href=&quot;/tampa-bay-buccaneers-tickets/&quot;&gt;Tampa Bay Buccaneers&lt;/a&gt;                                                            &lt;a href=&quot;/tennessee-titans-tickets/&quot;&gt;Tennessee Titans&lt;/a&gt;                                                            &lt;a href=&quot;/washington-redskins-tickets/&quot;&gt;Washington Redskins&lt;/a&gt;                                                    &lt;/span&gt;
+
+                        &lt;span id=&quot;nba-hover-list&quot; class=&quot;hover-list&quot; attached=&quot;nba&quot; style=&quot;display: none;&quot;&gt;
+                                                            &lt;a href=&quot;/atlanta-hawks-tickets/&quot;&gt;Atlanta Hawks&lt;/a&gt;                                                            &lt;a href=&quot;/boston-celtics-tickets/&quot;&gt;Boston Celtics&lt;/a&gt;                                                            &lt;a href=&quot;/charlotte-bobcats-tickets/&quot;&gt;Charlotte Bobcats&lt;/a&gt;                                                            &lt;a href=&quot;/chicago-bulls-tickets/&quot;&gt;Chicago Bulls&lt;/a&gt;                                                            &lt;a href=&quot;/cleveland-cavaliers-tickets/&quot;&gt;Cleveland Cavaliers&lt;/a&gt;                                                            &lt;a href=&quot;/dallas-mavericks-tickets/&quot;&gt;Dallas Mavericks&lt;/a&gt;                                                            &lt;a href=&quot;/denver-nuggets-tickets/&quot;&gt;Denver Nuggets&lt;/a&gt;                                                            &lt;a href=&quot;/detroit-pistons-tickets/&quot;&gt;Detroit Pistons&lt;/a&gt;                                                            &lt;a href=&quot;/golden-state-warriors-tickets/&quot;&gt;Golden State Warriors&lt;/a&gt;                                                            &lt;a href=&quot;/houston-rockets-tickets/&quot;&gt;Houston Rockets&lt;/a&gt;                                                            &lt;a href=&quot;/indiana-pacers-tickets/&quot;&gt;Indiana Pacers&lt;/a&gt;                                                            &lt;a href=&quot;/los-angeles-clippers-tickets/&quot;&gt;Los Angeles Clippers&lt;/a&gt;                                                            &lt;a href=&quot;/los-angeles-lakers-tickets/&quot;&gt;Los Angeles Lakers&lt;/a&gt;                                                            &lt;a href=&quot;/memphis-grizzlies-tickets/&quot;&gt;Memphis Grizzlies&lt;/a&gt;                                                            &lt;a href=&quot;/miami-heat-tickets/&quot;&gt;Miami Heat&lt;/a&gt;                                                            &lt;a href=&quot;/milwaukee-bucks-tickets/&quot;&gt;Milwaukee Bucks&lt;/a&gt;                                                            &lt;a href=&quot;/minnesota-timberwolves-tickets/&quot;&gt;Minnesota Timberwolves&lt;/a&gt;                                                            &lt;a href=&quot;/new-jersey-nets-tickets/&quot;&gt;New Jersey Nets&lt;/a&gt;                                                            &lt;a href=&quot;/new-orleans-hornets-tickets/&quot;&gt;New Orleans Hornets&lt;/a&gt;                                                            &lt;a href=&quot;/new-york-knicks-tickets/&quot;&gt;New York Knicks&lt;/a&gt;                                                            &lt;a href=&quot;/oklahoma-city-thunder-tickets/&quot;&gt;Oklahoma City Thunder&lt;/a&gt;                                                            &lt;a href=&quot;/orlando-magic-tickets/&quot;&gt;Orlando Magic&lt;/a&gt;                                                            &lt;a href=&quot;/philadelphia-76ers-tickets/&quot;&gt;Philadelphia 76ers&lt;/a&gt;                                                            &lt;a href=&quot;/phoenix-suns-tickets/&quot;&gt;Phoenix Suns&lt;/a&gt;                                                            &lt;a href=&quot;/portland-trail-blazers-tickets/&quot;&gt;Portland Trail Blazers&lt;/a&gt;                                                            &lt;a href=&quot;/sacramento-kings-tickets/&quot;&gt;Sacramento Kings&lt;/a&gt;                                                            &lt;a href=&quot;/san-antonio-spurs-tickets/&quot;&gt;San Antonio Spurs&lt;/a&gt;                                                            &lt;a href=&quot;/toronto-raptors-tickets/&quot;&gt;Toronto Raptors&lt;/a&gt;                                                            &lt;a href=&quot;/utah-jazz-tickets/&quot;&gt;Utah Jazz&lt;/a&gt;                                                            &lt;a href=&quot;/washington-wizards-tickets/&quot;&gt;Washington Wizards&lt;/a&gt;                                                    &lt;/span&gt;
+
+                        &lt;span id=&quot;nhl-hover-list&quot; class=&quot;hover-list&quot; attached=&quot;nhl&quot; style=&quot;display: none;&quot;&gt;
+                                                            &lt;a href=&quot;/anaheim-ducks-tickets/&quot;&gt;Anaheim Ducks&lt;/a&gt;                                                            &lt;a href=&quot;/boston-bruins-tickets/&quot;&gt;Boston Bruins&lt;/a&gt;                                                            &lt;a href=&quot;/buffalo-sabres-tickets/&quot;&gt;Buffalo Sabres&lt;/a&gt;                                                            &lt;a href=&quot;/calgary-flames-tickets/&quot;&gt;Calgary Flames&lt;/a&gt;                                                            &lt;a href=&quot;/carolina-hurricanes-tickets/&quot;&gt;Carolina Hurricanes&lt;/a&gt;                                                            &lt;a href=&quot;/chicago-blackhawks-tickets/&quot;&gt;Chicago Blackhawks&lt;/a&gt;                                                            &lt;a href=&quot;/colorado-avalanche-tickets/&quot;&gt;Colorado Avalanche&lt;/a&gt;                                                            &lt;a href=&quot;/columbus-blue-jackets-tickets/&quot;&gt;Columbus Blue Jackets&lt;/a&gt;                                                            &lt;a href=&quot;/dallas-stars-tickets/&quot;&gt;Dallas Stars&lt;/a&gt;                                                            &lt;a href=&quot;/detroit-red-wings-tickets/&quot;&gt;Detroit Red Wings&lt;/a&gt;                                                            &lt;a href=&quot;/edmonton-oilers-tickets/&quot;&gt;Edmonton Oilers&lt;/a&gt;                                                            &lt;a href=&quot;/florida-panthers-tickets/&quot;&gt;Florida Panthers&lt;/a&gt;                                                            &lt;a href=&quot;/los-angeles-kings-tickets/&quot;&gt;Los Angeles Kings&lt;/a&gt;                                                            &lt;a href=&quot;/minnesota-wild-tickets/&quot;&gt;Minnesota Wild&lt;/a&gt;                                                            &lt;a href=&quot;/montreal-canadiens-tickets/&quot;&gt;Montreal Canadiens&lt;/a&gt;                                                            &lt;a href=&quot;/nashville-predators-tickets/&quot;&gt;Nashville Predators&lt;/a&gt;                                                            &lt;a href=&quot;/new-jersey-devils-tickets/&quot;&gt;New Jersey Devils&lt;/a&gt;                                                            &lt;a href=&quot;/new-york-islanders-tickets/&quot;&gt;New York Islanders&lt;/a&gt;                                                            &lt;a href=&quot;/new-york-rangers-tickets/&quot;&gt;New York Rangers&lt;/a&gt;                                                            &lt;a href=&quot;/ottawa-senators-tickets/&quot;&gt;Ottawa Senators&lt;/a&gt;                                                            &lt;a href=&quot;/philadelphia-flyers-tickets/&quot;&gt;Philadelphia Flyers&lt;/a&gt;                                                            &lt;a href=&quot;/phoenix-coyotes-tickets/&quot;&gt;Phoenix Coyotes&lt;/a&gt;                                                            &lt;a href=&quot;/pittsburgh-penguins-tickets/&quot;&gt;Pittsburgh Penguins&lt;/a&gt;                                                            &lt;a href=&quot;/san-jose-sharks-tickets/&quot;&gt;San Jose Sharks&lt;/a&gt;                                                            &lt;a href=&quot;/st-louis-blues-tickets/&quot;&gt;St. Louis Blues&lt;/a&gt;                                                            &lt;a href=&quot;/tampa-bay-lightning-tickets/&quot;&gt;Tampa Bay Lightning&lt;/a&gt;                                                            &lt;a href=&quot;/toronto-maple-leafs-tickets/&quot;&gt;Toronto Maple Leafs&lt;/a&gt;                                                            &lt;a href=&quot;/vancouver-canucks-tickets/&quot;&gt;Vancouver Canucks&lt;/a&gt;                                                            &lt;a href=&quot;/washington-capitals-tickets/&quot;&gt;Washington Capitals&lt;/a&gt;                                                            &lt;a href=&quot;/winnipeg-jets-tickets/&quot;&gt;Winnipeg Jets&lt;/a&gt;                                                    &lt;/span&gt;
+
+                        &lt;span id=&quot;concerts-hover-list&quot; class=&quot;hover-list&quot; attached=&quot;concerts&quot; style=&quot;display: none;&quot;&gt;
+                                                            &lt;a href=&quot;/celine-dion-tickets/&quot;&gt;Celine Dion&lt;/a&gt;                                                            &lt;a href=&quot;/roger-waters-tickets/&quot;&gt;Roger Waters&lt;/a&gt;                                                            &lt;a href=&quot;/tim-mcgraw-tickets/&quot;&gt;Tim McGraw&lt;/a&gt;                                                            &lt;a href=&quot;/kenny-chesney-tickets/&quot;&gt;Kenny Chesney&lt;/a&gt;                                                            &lt;a href=&quot;/elton-john-tickets/&quot;&gt;Elton John&lt;/a&gt;                                                            &lt;a href=&quot;/neil-diamond-tickets/&quot;&gt;Neil Diamond&lt;/a&gt;                                                            &lt;a href=&quot;/kelly-clarkson-tickets/&quot;&gt;Kelly Clarkson&lt;/a&gt;                                                            &lt;a href=&quot;/george-strait-tickets/&quot;&gt;George Strait&lt;/a&gt;                                                            &lt;a href=&quot;/lady-antebellum-tickets/&quot;&gt;Lady Antebellum&lt;/a&gt;                                                            &lt;a href=&quot;/radiohead-tickets/&quot;&gt;Radiohead&lt;/a&gt;                                                                                                                        &lt;a href=&quot;/concert-tickets/&quot;&gt;More Concerts &amp;rarr;&lt;/a&gt;                                                    &lt;/span&gt;
+
+
+                    &lt;!-- Auxiliary Dropdowns --&gt;
+                                                                                            &lt;span id=&quot;ncaa_football2-hover-list&quot; class=&quot;hover-list hover-list2&quot; attached=&quot;ncaa_football&quot; style=&quot;display: none;&quot;&gt;
+                                                            &lt;a href=&quot;/alabama-crimson-tide-football-tickets/&quot;&gt;Alabama&lt;/a&gt;                                                            &lt;a href=&quot;/michigan-wolverines-football-tickets/&quot;&gt;Michigan&lt;/a&gt;                                                            &lt;a href=&quot;/florida-gators-football-tickets/&quot;&gt;Florida&lt;/a&gt;                                                            &lt;a href=&quot;/ohio-state-buckeyes-football-tickets/&quot;&gt;Ohio State&lt;/a&gt;                                                            &lt;a href=&quot;/auburn-tigers-football-tickets/&quot;&gt;Auburn&lt;/a&gt;                                                            &lt;a href=&quot;/penn-state-nittany-lions-football-tickets/&quot;&gt;Penn State&lt;/a&gt;                                                            &lt;a href=&quot;/texas-longhorns-football-tickets/&quot;&gt;Texas Longhorns&lt;/a&gt;                                                            &lt;a href=&quot;/wisconsin-badgers-football-tickets/&quot;&gt;Wisconsin&lt;/a&gt;                                                            &lt;a href=&quot;/florida-gators-football-tickets/&quot;&gt;Florida&lt;/a&gt;                                                            &lt;a href=&quot;/ncaa-football-tickets/&quot;&gt;More College Football &amp;rarr;&lt;/a&gt;                                                    &lt;/span&gt;
+                                                                                            &lt;span id=&quot;ncaa_basketball2-hover-list&quot; class=&quot;hover-list hover-list2&quot; attached=&quot;ncaa_basketball&quot; style=&quot;display: none;&quot;&gt;
+                                                            &lt;a href=&quot;/north-carolina-tar-heels-basketball-tickets/&quot;&gt;NC State&lt;/a&gt;                                                            &lt;a href=&quot;/michigan-state-spartans-basketball-tickets/&quot;&gt;Michigan State&lt;/a&gt;                                                            &lt;a href=&quot;/kentucky-wildcats-basketball-tickets/&quot;&gt;Kentucky&lt;/a&gt;                                                            &lt;a href=&quot;/kansas-jayhawks-basketball-tickets/&quot;&gt;Kansas&lt;/a&gt;                                                            &lt;a href=&quot;/duke-blue-devils-basketball-tickets/&quot;&gt;Duke&lt;/a&gt;                                                            &lt;a href=&quot;/connecticut-huskies-basketball-tickets/&quot;&gt;UConn&lt;/a&gt;                                                            &lt;a href=&quot;/notre-dame-fighting-irish-basketball-tickets/&quot;&gt;Notre Dame&lt;/a&gt;                                                            &lt;a href=&quot;/ohio-state-buckeyes-basketball-tickets/&quot;&gt;Ohio State&lt;/a&gt;                                                            &lt;a href=&quot;/georgetown-hoyas-basketball-tickets/&quot;&gt;Georgetown&lt;/a&gt;                                                            &lt;a href=&quot;/ncaa-basketball-tickets/&quot;&gt;More College Basketball &amp;rarr;&lt;/a&gt;                                                    &lt;/span&gt;
+                                                                                            &lt;span id=&quot;theater2-hover-list&quot; class=&quot;hover-list hover-list2&quot; attached=&quot;theater&quot; style=&quot;display: none;&quot;&gt;
+                                                            &lt;a href=&quot;/radio-city-christmas-spectacular-tickets/&quot;&gt;Radio City Christmas&lt;/a&gt;                                                            &lt;a href=&quot;/lion-king-tickets/&quot;&gt;Lion King&lt;/a&gt;                                                            &lt;a href=&quot;/wicked-tickets/&quot;&gt;Wicked&lt;/a&gt;                                                            &lt;a href=&quot;/west-side-story-tickets/&quot;&gt;West Side Story&lt;/a&gt;                                                            &lt;a href=&quot;/billy-elliot-tickets/&quot;&gt;Billy Elliot&lt;/a&gt;                                                            &lt;a href=&quot;/jersey-boys-tickets/&quot;&gt;Jersey Boys&lt;/a&gt;                                                            &lt;a href=&quot;/cirque-du-soleil-tickets/&quot;&gt;Cirque Du Soleil&lt;/a&gt;                                                            &lt;a href=&quot;/rock-of-ages-tickets/&quot;&gt;Rock of Ages&lt;/a&gt;                                                            &lt;a href=&quot;/hair-tickets/&quot;&gt;Hair&lt;/a&gt;                                                            &lt;a href=&quot;/theater-tickets/&quot;&gt;More Theater &amp;rarr;&lt;/a&gt;                                                    &lt;/span&gt;
+                                                                                            &lt;span id=&quot;bloomberg2-hover-list&quot; class=&quot;hover-list hover-list2&quot; attached=&quot;bloomberg&quot; style=&quot;display: none;&quot;&gt;
+                                                            &lt;a href=&quot;/abingdon-theatre-company-2-tickets/&quot;&gt;Abingdon Theater&lt;/a&gt;                                                            &lt;a href=&quot;/dance-theatre-of-harlem-tickets/&quot;&gt;Dance Theatre of Harlem&lt;/a&gt;                                                            &lt;a href=&quot;/danspace-project-2-tickets/&quot;&gt;Danspace Project&lt;/a&gt;                                                            &lt;a href=&quot;/ethel-tickets/&quot;&gt;Ethel&lt;/a&gt;                                                            &lt;a href=&quot;/evidence-dance-tickets/&quot;&gt;Evidence Dance&lt;/a&gt;                                                            &lt;a href=&quot;/film-forum-2-tickets/&quot;&gt;Film Forum&lt;/a&gt;                                                            &lt;a href=&quot;/harlem-stage-tickets/&quot;&gt;Harlem Stage&lt;/a&gt;                                                            &lt;a href=&quot;/here-tickets/&quot;&gt;HERE&lt;/a&gt;                                                            &lt;a href=&quot;/irondale-tickets/&quot;&gt;Irondale&lt;/a&gt;                                                            &lt;a href=&quot;/dnya-project/&quot;&gt;more NYC events &amp;rarr;&lt;/a&gt;                                                    &lt;/span&gt;
+                                                                                            &lt;span id=&quot;fight2-hover-list&quot; class=&quot;hover-list hover-list2&quot; attached=&quot;fight&quot; style=&quot;display: none;&quot;&gt;
+                                                            &lt;a href=&quot;/ufc-tickets/&quot;&gt;UFC&lt;/a&gt;                                                            &lt;a href=&quot;/boxing-tickets/&quot;&gt;Boxing&lt;/a&gt;                                                            &lt;a href=&quot;/strikeforce-tickets/&quot;&gt;Strikeforce&lt;/a&gt;                                                            &lt;a href=&quot;/bellator-fighting-championships-tickets/&quot;&gt;Bellator Fighting Championships&lt;/a&gt;                                                            &lt;a href=&quot;/mixed-martial-arts-mma-tickets/&quot;&gt;Mixed Martial Arts (MMA)&lt;/a&gt;                                                            &lt;a href=&quot;/fighting-tickets/&quot;&gt;More Fighting events &amp;rarr;&lt;/a&gt;                                                    &lt;/span&gt;
+                                                                                            &lt;span id=&quot;tennis2-hover-list&quot; class=&quot;hover-list hover-list2&quot; attached=&quot;tennis&quot; style=&quot;display: none;&quot;&gt;
+                                                            &lt;a href=&quot;/us-open-tennis-championship-tickets/&quot;&gt;US Open Championship&lt;/a&gt;                                                            &lt;a href=&quot;/davis-cup-tickets/&quot;&gt;Davis Cup&lt;/a&gt;                                                            &lt;a href=&quot;/sony-ericsson-open-miami-tickets/&quot;&gt;Sony Ericsson Open&lt;/a&gt;                                                            &lt;a href=&quot;/bnp-paribas-open-tickets/&quot;&gt;BNP Paribas Open&lt;/a&gt;                                                            &lt;a href=&quot;/champions-cup-tickets/&quot;&gt;Champions Cup&lt;/a&gt;                                                            &lt;a href=&quot;/pilot-pen-tennis-championship-new-haven-tickets/&quot;&gt;Pilot Pen Championship&lt;/a&gt;                                                            &lt;a href=&quot;/la-tennis-open-tickets/&quot;&gt;LA Tennis Open&lt;/a&gt;                                                            &lt;a href=&quot;/rogers-cup-toronto-tickets/&quot;&gt;Rogers Cup&lt;/a&gt;                                                            &lt;a href=&quot;/tennis-tickets/&quot;&gt;More Tennis &amp;rarr;&lt;/a&gt;                                                    &lt;/span&gt;
+                                                                                            &lt;span id=&quot;golf2-hover-list&quot; class=&quot;hover-list hover-list2&quot; attached=&quot;golf&quot; style=&quot;display: none;&quot;&gt;
+                                                            &lt;a href=&quot;/masters-tickets/&quot;&gt;Masters&lt;/a&gt;                                                            &lt;a href=&quot;/us-open-golf-tickets/&quot;&gt;US Open&lt;/a&gt;                                                            &lt;a href=&quot;/british-open-tickets/&quot;&gt;British Open&lt;/a&gt;                                                            &lt;a href=&quot;/pga-championship-tickets/&quot;&gt;PGA Championship&lt;/a&gt;                                                            &lt;a href=&quot;/lpga-championship-tickets/&quot;&gt;LPGA Championship&lt;/a&gt;                                                            &lt;a href=&quot;/the-barclays-golf-tickets/&quot;&gt;The Barclays&lt;/a&gt;                                                            &lt;a href=&quot;/world-golf-championships-tickets/&quot;&gt;World Golf Championships&lt;/a&gt;                                                            &lt;a href=&quot;/arnold-palmer-invitational-tickets/&quot;&gt;Arnold Palmer Invitational&lt;/a&gt;                                                            &lt;a href=&quot;/bridgestone-invitational-tickets/&quot;&gt;Bridgestone Invitational&lt;/a&gt;                                                            &lt;a href=&quot;/golf-tickets/&quot;&gt;More Golf &amp;rarr;&lt;/a&gt;                                                    &lt;/span&gt;
+                                                                                            &lt;span id=&quot;auto_racing2-hover-list&quot; class=&quot;hover-list hover-list2&quot; attached=&quot;auto_racing&quot; style=&quot;display: none;&quot;&gt;
+                                                            &lt;a href=&quot;/nascar-sprint-cup-tickets/&quot;&gt;NASCAR Sprintcup&lt;/a&gt;                                                            &lt;a href=&quot;/nascar-nationwide-series-tickets/&quot;&gt;NASCAR Nationwide&lt;/a&gt;                                                            &lt;a href=&quot;/indycar-tickets/&quot;&gt;IndyCar&lt;/a&gt;                                                            &lt;a href=&quot;/monster-truck-tickets/&quot;&gt;Monster Truck&lt;/a&gt;                                                            &lt;a href=&quot;/motocross-tickets/&quot;&gt;Motocross&lt;/a&gt;                                                            &lt;a href=&quot;/f1-tickets/&quot;&gt;F1&lt;/a&gt;                                                            &lt;a href=&quot;/auto-racing-tickets/&quot;&gt;More Racing &amp;rarr;&lt;/a&gt;                                                    &lt;/span&gt;
+                                                                                            &lt;span id=&quot;soccer2-hover-list&quot; class=&quot;hover-list hover-list2&quot; attached=&quot;soccer&quot; style=&quot;display: none;&quot;&gt;
+                                                            &lt;a href=&quot;/chivas-usa-tickets/&quot;&gt;Chivas USA&lt;/a&gt;                                                            &lt;a href=&quot;/dc-united-tickets/&quot;&gt;DC United&lt;/a&gt;                                                            &lt;a href=&quot;/fc-dallas-tickets/&quot;&gt;FC Dallas&lt;/a&gt;                                                            &lt;a href=&quot;/houston-dynamo-tickets/&quot;&gt;Houston Dynamo&lt;/a&gt;                                                            &lt;a href=&quot;/la-galaxy-tickets/&quot;&gt;LA Galaxy&lt;/a&gt;                                                            &lt;a href=&quot;/new-york-red-bulls-tickets/&quot;&gt;New York Red Bulls&lt;/a&gt;                                                            &lt;a href=&quot;/san-jose-earthquakes-tickets/&quot;&gt;San Jose Earthquakes&lt;/a&gt;                                                            &lt;a href=&quot;/seattle-sounders-fc-tickets/&quot;&gt;Seattle Sounders&lt;/a&gt;                                                            &lt;a href=&quot;/toronto-fc-tickets/&quot;&gt;Toronto FC&lt;/a&gt;                                                            &lt;a href=&quot;/soccer-tickets/&quot;&gt;More Soccer &amp;rarr;&lt;/a&gt;                                                    &lt;/span&gt;
+                                                                                            &lt;span id=&quot;comedy2-hover-list&quot; class=&quot;hover-list hover-list2&quot; attached=&quot;comedy&quot; style=&quot;display: none;&quot;&gt;
+                                                            &lt;a href=&quot;/jerry-seinfeld-tickets/&quot;&gt;Jerry Seinfeld&lt;/a&gt;                                                            &lt;a href=&quot;/daniel-tosh-tickets/&quot;&gt;Daniel Tosh&lt;/a&gt;                                                            &lt;a href=&quot;/mike-epps-tickets/&quot;&gt;Mike Epps&lt;/a&gt;                                                            &lt;a href=&quot;/jeff-foxworthy-tickets/&quot;&gt;Jeff Foxworthy&lt;/a&gt;                                                            &lt;a href=&quot;/bill-maher-tickets/&quot;&gt;Bill Maher&lt;/a&gt;                                                            &lt;a href=&quot;/george-lopez-tickets/&quot;&gt;George Lopez&lt;/a&gt;                                                            &lt;a href=&quot;/louis-c-k-tickets/&quot;&gt;Louis C.K.&lt;/a&gt;                                                            &lt;a href=&quot;/bill-engvall-tickets/&quot;&gt;Bill Engvall&lt;/a&gt;                                                            &lt;a href=&quot;/the-daily-show-tickets/&quot;&gt;The Daily Show&lt;/a&gt;                                                            &lt;a href=&quot;/comedy-tickets/&quot;&gt;More Comedy &amp;rarr;&lt;/a&gt;                                                    &lt;/span&gt;
+                                                                                            &lt;span id=&quot;family2-hover-list&quot; class=&quot;hover-list hover-list2&quot; attached=&quot;family&quot; style=&quot;display: none;&quot;&gt;
+                                                            &lt;a href=&quot;/barney-live-tickets/&quot;&gt;Barney Live&lt;/a&gt;                                                            &lt;a href=&quot;/sesame-street-live-tickets/&quot;&gt;Sesame Street Live&lt;/a&gt;                                                            &lt;a href=&quot;/cinderella-theatre-tickets/&quot;&gt;Cinderella Theater&lt;/a&gt;                                                            &lt;a href=&quot;/ringling-bros-and-barnum-and-bailey-circus-tickets/&quot;&gt;Ringling Bros Circus&lt;/a&gt;                                                            &lt;a href=&quot;/wonderland-tickets/&quot;&gt;Wonderland&lt;/a&gt;                                                            &lt;a href=&quot;/universoul-circus-tour-tickets/&quot;&gt;UniverSoul Circus Tour&lt;/a&gt;                                                            &lt;a href=&quot;/disney-tour-tickets/&quot;&gt;Disney Tour&lt;/a&gt;                                                            &lt;a href=&quot;/yo-gabba-gabba-national-tour-tickets/&quot;&gt;Yo Gabba Gabba&lt;/a&gt;                                                            &lt;a href=&quot;/gazillion-bubble-show-tour-tickets/&quot;&gt;Gazillion Bubble Show Tour&lt;/a&gt;                                                            &lt;a href=&quot;/family-tickets/&quot;&gt;More Family Events &amp;rarr;&lt;/a&gt;                                                    &lt;/span&gt;
+
+                &lt;/div&gt;
+
+                &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+
+            &lt;/div&gt;&lt;div class=&quot;link-list-end&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+        &lt;/li&gt;
+
+        &lt;li class=&quot;header-divider&quot;&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;script type=&quot;text/javascript&quot;&gt;
+  jQuery('.more-links .hover').live(&quot;mouseover ninja-select&quot;, function (e, elem) {
+    var hover = jQuery(e.currentTarget);
+    if (hover.is(&quot;.hover&quot;)) {
+      jQuery('.column-description a.hover').removeClass('current');
+      hover.addClass('current');
+      jQuery('.hover-list').hide();
+      jQuery('#' + hover.attr('attached') + '-hover-list').show();
+    }
+  });
+
+  // the timeout bs fixes flickering in IE7
+  jQuery('#main-nav .nav-link').mouseover(function (e, elem) {
+    var elem = jQuery(e.currentTarget);
+    if (elem.is('.nav-link')) {
+      clearTimeout(elem.data(&quot;timeout&quot;));
+      elem.data(&quot;timeout&quot;, setTimeout(function () {
+        var dropdown = elem.find('.link-list'),
+            offset   = elem.position();
+        elem.addClass(&quot;over&quot;);
+        dropdown.css({
+          position: &quot;absolute&quot;,
+          top: offset.top + elem.height() - 1,
+          left: offset.left
+        });
+      },
+      0));
+    }
+  });
+
+  jQuery('#main-nav .nav-link').mouseout(function (e, elem) {
+    var elem = jQuery(e.currentTarget);
+    if (elem.is('.nav-link')) {
+      clearTimeout(elem.data(&quot;timeout&quot;));
+      elem.data(&quot;timeout&quot;, setTimeout(function () {elem.removeClass(&quot;over&quot;);}, 20));
+    }
+  });
+&lt;/script&gt;
+        &lt;!-- Page-related Tools (account, alerts) --&gt;
+        &lt;div class=&quot;nav-links&quot;&gt;
+            &lt;ul class=&quot;tools&quot;&gt;
+              &lt;li class=&quot;header-divider&quot;&gt;&lt;/li&gt;
+              &lt;li id=&quot;alert-button&quot; rel=&quot;760318&quot;&gt;
+                      &lt;a href=&quot;/account/info&quot; class=&quot;tool get-email-alerts&quot;&gt;
+                    Get Email Alerts
+            &lt;/a&gt;              &lt;/li&gt;
+
+              &lt;li class=&quot;header-divider&quot;&gt;&lt;/li&gt;
+
+              &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;tool price-forecast&quot; title=&quot;See price changes over time.&quot; id=&quot;ticket-analytics&quot;&gt;&lt;span class=&quot;forecast-arrow&quot;&gt;&lt;/span&gt;Ticket Analytics&lt;/a&gt;&lt;/li&gt;
+
+              &lt;li class=&quot;header-divider&quot;&gt;&lt;/li&gt;
+
+              &lt;li class=&quot;dd account-dropdown&quot; id=&quot;logged-in-nav&quot; style=&quot;display:none; float: left; position: relative; z-index: 500;&quot;&gt;
+                &lt;a href=&quot;#&quot; class=&quot;tool account label&quot; id=&quot;account-dropdown&quot;&gt;&lt;/a&gt;
+                &lt;ul class=&quot;account-dropdown-list dropdown menu&quot;&gt;
+                                    &lt;li&gt;&lt;a rel=&quot;nofollow&quot; href=&quot;/account/info&quot;&gt;Account Settings&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;a id=&quot;logout-link&quot; rel=&quot;nofollow&quot; href=&quot;/logout/&quot;&gt;Sign out&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/li&gt;
+
+              &lt;li id=&quot;logged-out-nav&quot; style=&quot; float: left;&quot;&gt;
+                &lt;a href=&quot;#&quot; id=&quot;login-link&quot; class=&quot;tool login&quot;&gt;Login&lt;/a&gt;
+              &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;!-- Javscripts, GetSatisfaction, Modals --&gt;
+
+    &lt;!-- Loading Animation --&gt;
+    &lt;div id=&quot;loading-animation&quot;&gt;
+      &lt;div id=&quot;sgloading&quot;&gt;
+        &lt;div class='animation-header'&gt;
+          &lt;img src=&quot;http://cdn.seatgeek.com/images/map/new/ajax-loader.gif&quot; width=&quot;24&quot; height=&quot;24&quot; alt=&quot;Loading Miami Heat at New York Knicks tickets...&quot;/&gt;
+          &lt;span&gt;Searching the web's ticket sites&amp;hellip;&lt;/span&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;animation-container&quot;&gt;
+
+          &lt;div class=&quot;scrolling-sellers animated&quot;&gt;&lt;img src=&quot;/images/map/new/seller-strip.png&quot;/&gt;&lt;/div&gt;
+
+          &lt;div class=&quot;magnified-container&quot;&gt;
+            &lt;div class=&quot;magnified-sellers animated&quot;&gt;&lt;img src=&quot;/images/map/new/seller-strip.png&quot; width=&quot;1852&quot; height=&quot;50&quot;/&gt;&lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;div class=&quot;magnifying-glass&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;script type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;
+        // TODO: kill this
+        window.event_info = {&quot;has_face_value&quot;:false};
+
+        // Sponsorship info
+        window.sponsorship_info = {&quot;market_full&quot;:&quot;eBay&quot;,&quot;market_slug&quot;:&quot;ebay&quot;,&quot;market_tagline&quot;:&quot;eBay is the world's largest online marketplace&quot;,&quot;market_tracker_image&quot;:&quot;http:\/\/rover.ebay.com\/roverimp\/1\/711-53200-19255-0\/1?ff3=4&amp;amp;pub=5574949749&amp;amp;toolid=10001&amp;amp;campid=5336866218&amp;amp;customid=&amp;amp;mpt=142597885&quot;};
+    &lt;/script&gt;
+
+    &lt;script type=&quot;text/javascript&quot; src=&quot;/js/bundle_maps.75887a1512b31750227500141d6e7b63d9b931ff.js&quot;&gt;&lt;/script&gt;
+
+    &lt;script type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;
+        // Backbone App
+        window.app = new AppView({
+          el: jQuery(&quot;.map-content&quot;)[0],
+                      event: {&quot;id&quot;:760318,&quot;title&quot;:&quot;Miami Heat at New York Knicks&quot;,&quot;url&quot;:&quot;\/heat-knicks-tickets\/4-15-2012-new-york-new-york-madison-square-garden\/nba\/760318\/&quot;,&quot;short_title&quot;:&quot;Heat @ Knicks&quot;,&quot;datetime_local&quot;:&quot;2012-04-15T13:00:00&quot;,&quot;datetime_utc&quot;:&quot;2012-04-15T17:00:00&quot;,&quot;type&quot;:&quot;nba&quot;,&quot;score&quot;:711804,&quot;venue&quot;:{&quot;id&quot;:93,&quot;url&quot;:&quot;\/madison-square-garden-tickets\/&quot;,&quot;name&quot;:&quot;Madison Square Garden&quot;,&quot;address&quot;:&quot;4 Pennsylvania Plaza&quot;,&quot;extended_address&quot;:null,&quot;city&quot;:&quot;New York&quot;,&quot;state&quot;:&quot;NY&quot;,&quot;postal_code&quot;:&quot;10001&quot;,&quot;country&quot;:&quot;US&quot;,&quot;location&quot;:{&quot;lat&quot;:40.7518085575,&quot;lon&quot;:-73.9924907684},&quot;score&quot;:1065.52},&quot;performers&quot;:[{&quot;id&quot;:2090,&quot;name&quot;:&quot;New York Knicks&quot;,&quot;slug&quot;:&quot;new-york-knicks&quot;,&quot;url&quot;:&quot;\/new-york-knicks-tickets\/&quot;,&quot;short_name&quot;:&quot;Knicks&quot;,&quot;type&quot;:&quot;nba&quot;,&quot;score&quot;:563412,&quot;image&quot;:&quot;http:\/\/cdn.seatgeek.com\/images\/bandshuge\/band_2090.jpg&quot;,&quot;primary&quot;:true,&quot;home_team&quot;:true},{&quot;id&quot;:2100,&quot;name&quot;:&quot;Miami Heat&quot;,&quot;slug&quot;:&quot;miami-heat&quot;,&quot;url&quot;:&quot;\/miami-heat-tickets\/&quot;,&quot;short_name&quot;:&quot;Heat&quot;,&quot;type&quot;:&quot;nba&quot;,&quot;score&quot;:317298,&quot;image&quot;:&quot;http:\/\/cdn.seatgeek.com\/images\/bandshuge\/band_2100.jpg&quot;,&quot;away_team&quot;:true}],&quot;taxonomies&quot;:[{&quot;id&quot;:1000000,&quot;name&quot;:&quot;sports&quot;,&quot;parent_id&quot;:null},{&quot;id&quot;:1030000,&quot;name&quot;:&quot;basketball&quot;,&quot;parent_id&quot;:1000000},{&quot;id&quot;:1030100,&quot;name&quot;:&quot;nba&quot;,&quot;parent_id&quot;:1030000}],&quot;stats&quot;:{&quot;lowest_price&quot;:217,&quot;average_price&quot;:509.5,&quot;highest_price&quot;:24460,&quot;listing_count&quot;:2772}},
+                    venue: {&quot;id&quot;:93,&quot;url&quot;:&quot;\/madison-square-garden-tickets\/&quot;,&quot;name&quot;:&quot;Madison Square Garden&quot;,&quot;address&quot;:&quot;4 Pennsylvania Plaza&quot;,&quot;extended_address&quot;:null,&quot;city&quot;:&quot;New York&quot;,&quot;state&quot;:&quot;NY&quot;,&quot;postal_code&quot;:&quot;10001&quot;,&quot;country&quot;:&quot;US&quot;,&quot;location&quot;:{&quot;lat&quot;:40.7518085575,&quot;lon&quot;:-73.9924907684},&quot;score&quot;:1065.52},
+          auto_close_sidebar: (!!window.AUTO_CLOSE_SIDEBAR),
+          auto_zoom:          true,
+          is_ga:              false,
+          map_base_url:       &quot;http:\/\/cdn.seatgeek.com\/maps\/data\/v93\/nba\/default\/4\/&quot;,
+                    rows_at_all_zooms:  false,
+          view_from_seat_manifest: {&quot;1&quot;:&quot;\/image\/7100\/1&quot;,&quot;10&quot;:&quot;\/image\/7100\/10&quot;,&quot;101&quot;:&quot;\/image\/7100\/101&quot;,&quot;102&quot;:&quot;\/image\/7100\/102&quot;,&quot;103&quot;:&quot;\/image\/7100\/103&quot;,&quot;104&quot;:&quot;\/image\/7100\/104&quot;,&quot;105&quot;:&quot;\/image\/7100\/105&quot;,&quot;106&quot;:&quot;\/image\/7100\/106&quot;,&quot;107&quot;:&quot;\/image\/7100\/107&quot;,&quot;108&quot;:&quot;\/image\/7100\/108&quot;,&quot;109&quot;:&quot;\/image\/7100\/109&quot;,&quot;11&quot;:&quot;\/image\/7100\/11&quot;,&quot;110&quot;:&quot;\/image\/7100\/110&quot;,&quot;111&quot;:&quot;\/image\/7100\/111&quot;,&quot;112&quot;:&quot;\/image\/7100\/112&quot;,&quot;113&quot;:&quot;\/image\/7100\/113&quot;,&quot;114&quot;:&quot;\/image\/7100\/114&quot;,&quot;115&quot;:&quot;\/image\/7100\/115&quot;,&quot;116&quot;:&quot;\/image\/7100\/116&quot;,&quot;117&quot;:&quot;\/image\/7100\/117&quot;,&quot;118&quot;:&quot;\/image\/7100\/118&quot;,&quot;119&quot;:&quot;\/image\/7100\/119&quot;,&quot;12&quot;:&quot;\/image\/7100\/12&quot;,&quot;120&quot;:&quot;\/image\/7100\/120&quot;,&quot;121&quot;:&quot;\/image\/7100\/center-121&quot;,&quot;122&quot;:&quot;\/image\/7100\/club-center-122&quot;,&quot;123&quot;:&quot;\/image\/7100\/club-center-123&quot;,&quot;124&quot;:&quot;\/image\/7100\/club-center-124&quot;,&quot;125&quot;:&quot;\/image\/7100\/club-center-125&quot;,&quot;126&quot;:&quot;\/image\/7100\/center-126&quot;,&quot;127&quot;:&quot;\/image\/7100\/corner-127&quot;,&quot;128&quot;:&quot;\/image\/7100\/corner-128&quot;,&quot;129&quot;:&quot;\/image\/7100\/corner-129&quot;,&quot;13&quot;:&quot;\/image\/7100\/courtside-13&quot;,&quot;131&quot;:&quot;\/image\/7100\/baseline-131&quot;,&quot;132&quot;:&quot;\/image\/7100\/baseline-132&quot;,&quot;133&quot;:&quot;\/image\/7100\/baseline-133&quot;,&quot;14&quot;:&quot;\/image\/7100\/courtside-center-14&quot;,&quot;15&quot;:&quot;\/image\/7100\/courtside-center-15&quot;,&quot;16&quot;:&quot;\/image\/7100\/courtside-center-16&quot;,&quot;17&quot;:&quot;\/image\/7100\/courtside-center-17&quot;,&quot;18&quot;:&quot;\/image\/7100\/courtside-center-18&quot;,&quot;19&quot;:&quot;\/image\/7100\/courtside-center-19&quot;,&quot;2&quot;:&quot;\/image\/7100\/2&quot;,&quot;20&quot;:&quot;\/image\/7100\/courtside-20&quot;,&quot;201&quot;:&quot;\/image\/7100\/corner-201&quot;,&quot;202&quot;:&quot;\/image\/7100\/202&quot;,&quot;203&quot;:&quot;\/image\/7100\/203&quot;,&quot;204&quot;:&quot;\/image\/7100\/204&quot;,&quot;205&quot;:&quot;\/image\/7100\/205&quot;,&quot;206&quot;:&quot;\/image\/7100\/206&quot;,&quot;207&quot;:&quot;\/image\/7100\/207&quot;,&quot;208&quot;:&quot;\/image\/7100\/208&quot;,&quot;209&quot;:&quot;\/image\/7100\/209&quot;,&quot;21&quot;:&quot;\/image\/7100\/courtside-21&quot;,&quot;210&quot;:&quot;\/image\/7100\/210&quot;,&quot;211&quot;:&quot;\/image\/7100\/211&quot;,&quot;212&quot;:&quot;\/image\/7100\/corner-212&quot;,&quot;213&quot;:&quot;\/image\/7100\/baseline-213&quot;,&quot;214&quot;:&quot;\/image\/7100\/baseline-214&quot;,&quot;215&quot;:&quot;\/image\/7100\/baseline-215&quot;,&quot;216&quot;:&quot;\/image\/7100\/baseline-216&quot;,&quot;217&quot;:&quot;\/image\/7100\/baseline-217&quot;,&quot;218&quot;:&quot;\/image\/7100\/corner-218&quot;,&quot;219&quot;:&quot;\/image\/7100\/219&quot;,&quot;22&quot;:&quot;\/image\/7100\/courtside-22&quot;,&quot;220&quot;:&quot;\/image\/7100\/220&quot;,&quot;221&quot;:&quot;\/image\/7100\/221&quot;,&quot;222&quot;:&quot;\/image\/7100\/222&quot;,&quot;223&quot;:&quot;\/image\/7100\/223&quot;,&quot;224&quot;:&quot;\/image\/7100\/224&quot;,&quot;225&quot;:&quot;\/image\/7100\/225&quot;,&quot;226&quot;:&quot;\/image\/7100\/226&quot;,&quot;227&quot;:&quot;\/image\/7100\/227&quot;,&quot;228&quot;:&quot;\/image\/7100\/228&quot;,&quot;229&quot;:&quot;\/image\/7100\/corner-229&quot;,&quot;23&quot;:&quot;\/image\/7100\/courtside-23&quot;,&quot;230&quot;:&quot;\/image\/7100\/baseline-230&quot;,&quot;231&quot;:&quot;\/image\/7100\/baseline-231&quot;,&quot;232&quot;:&quot;\/image\/7100\/baseline-232&quot;,&quot;233&quot;:&quot;\/image\/7100\/baseline-233&quot;,&quot;234&quot;:&quot;\/image\/7100\/baseline-234&quot;,&quot;24&quot;:&quot;\/image\/7100\/courtside-center-24&quot;,&quot;25&quot;:&quot;\/image\/7100\/courtside-center-25&quot;,&quot;26&quot;:&quot;\/image\/7100\/courtside-center-26&quot;,&quot;27&quot;:&quot;\/image\/7100\/courtside-center-27&quot;,&quot;28&quot;:&quot;\/image\/7100\/courtside-center-28&quot;,&quot;29&quot;:&quot;\/image\/7100\/courtside-center-29&quot;,&quot;3&quot;:&quot;\/image\/7100\/3&quot;,&quot;300&quot;:&quot;\/image\/7100\/300&quot;,&quot;301&quot;:&quot;\/image\/7100\/301&quot;,&quot;302&quot;:&quot;\/image\/7100\/302&quot;,&quot;303&quot;:&quot;\/image\/7100\/303&quot;,&quot;304&quot;:&quot;\/image\/7100\/304&quot;,&quot;305&quot;:&quot;\/image\/7100\/305&quot;,&quot;306&quot;:&quot;\/image\/7100\/306&quot;,&quot;307&quot;:&quot;\/image\/7100\/307&quot;,&quot;308&quot;:&quot;\/image\/7100\/308&quot;,&quot;309&quot;:&quot;\/image\/7100\/309&quot;,&quot;31&quot;:&quot;\/image\/7100\/loge-baseline-31&quot;,&quot;310&quot;:&quot;\/image\/7100\/310&quot;,&quot;311&quot;:&quot;\/image\/7100\/311&quot;,&quot;312&quot;:&quot;\/image\/7100\/312&quot;,&quot;313&quot;:&quot;\/image\/7100\/313&quot;,&quot;314&quot;:&quot;\/image\/7100\/314&quot;,&quot;315&quot;:&quot;\/image\/7100\/315&quot;,&quot;316&quot;:&quot;\/image\/7100\/316&quot;,&quot;317&quot;:&quot;\/image\/7100\/317&quot;,&quot;318&quot;:&quot;\/image\/7100\/318&quot;,&quot;319&quot;:&quot;\/image\/7100\/319&quot;,&quot;32&quot;:&quot;\/image\/7100\/loge-baseline-32&quot;,&quot;320&quot;:&quot;\/image\/7100\/baseline-320&quot;,&quot;321&quot;:&quot;\/image\/7100\/baseline-321&quot;,&quot;322&quot;:&quot;\/image\/7100\/baseline-322&quot;,&quot;323&quot;:&quot;\/image\/7100\/baseline-323&quot;,&quot;324&quot;:&quot;\/image\/7100\/baseline-324&quot;,&quot;325&quot;:&quot;\/image\/7100\/325&quot;,&quot;326&quot;:&quot;\/image\/7100\/326&quot;,&quot;327&quot;:&quot;\/image\/7100\/327&quot;,&quot;328&quot;:&quot;\/image\/7100\/328&quot;,&quot;329&quot;:&quot;\/image\/7100\/329&quot;,&quot;33&quot;:&quot;\/image\/7100\/loge-baseline-33&quot;,&quot;330&quot;:&quot;\/image\/7100\/330&quot;,&quot;331&quot;:&quot;\/image\/7100\/331&quot;,&quot;332&quot;:&quot;\/image\/7100\/332&quot;,&quot;333&quot;:&quot;\/image\/7100\/333&quot;,&quot;334&quot;:&quot;\/image\/7100\/334&quot;,&quot;335&quot;:&quot;\/image\/7100\/335&quot;,&quot;336&quot;:&quot;\/image\/7100\/336&quot;,&quot;337&quot;:&quot;\/image\/7100\/337&quot;,&quot;338&quot;:&quot;\/image\/7100\/338&quot;,&quot;339&quot;:&quot;\/image\/7100\/339&quot;,&quot;34&quot;:&quot;\/image\/7100\/loge-baseline-34&quot;,&quot;340&quot;:&quot;\/image\/7100\/340&quot;,&quot;341&quot;:&quot;\/image\/7100\/341&quot;,&quot;342&quot;:&quot;\/image\/7100\/342&quot;,&quot;343&quot;:&quot;\/image\/7100\/343&quot;,&quot;344&quot;:&quot;\/image\/7100\/344&quot;,&quot;345&quot;:&quot;\/image\/7100\/345&quot;,&quot;346&quot;:&quot;\/image\/7100\/baseline-346&quot;,&quot;347&quot;:&quot;\/image\/7100\/baseline-347&quot;,&quot;348&quot;:&quot;\/image\/7100\/baseline-348&quot;,&quot;349&quot;:&quot;\/image\/7100\/baseline-349&quot;,&quot;35&quot;:&quot;\/image\/7100\/loge-baseline-35&quot;,&quot;350&quot;:&quot;\/image\/7100\/baseline-350&quot;,&quot;36&quot;:&quot;\/image\/7100\/loge-baseline-36&quot;,&quot;37&quot;:&quot;\/image\/7100\/loge-baseline-37&quot;,&quot;38&quot;:&quot;\/image\/7100\/loge-baseline-38&quot;,&quot;4&quot;:&quot;\/image\/7100\/4&quot;,&quot;40&quot;:&quot;\/image\/7100\/loge-baseline-40&quot;,&quot;401&quot;:&quot;\/image\/7100\/401&quot;,&quot;402&quot;:&quot;\/image\/7100\/402&quot;,&quot;403&quot;:&quot;\/image\/7100\/403&quot;,&quot;404&quot;:&quot;\/image\/7100\/404&quot;,&quot;405&quot;:&quot;\/image\/7100\/405&quot;,&quot;406&quot;:&quot;\/image\/7100\/406&quot;,&quot;407&quot;:&quot;\/image\/7100\/407&quot;,&quot;408&quot;:&quot;\/image\/7100\/408&quot;,&quot;409&quot;:&quot;\/image\/7100\/409&quot;,&quot;41&quot;:&quot;\/image\/7100\/loge-baseline-41&quot;,&quot;410&quot;:&quot;\/image\/7100\/410&quot;,&quot;411&quot;:&quot;\/image\/7100\/411&quot;,&quot;412&quot;:&quot;\/image\/7100\/412&quot;,&quot;413&quot;:&quot;\/image\/7100\/413&quot;,&quot;414&quot;:&quot;\/image\/7100\/414&quot;,&quot;415&quot;:&quot;\/image\/7100\/415&quot;,&quot;416&quot;:&quot;\/image\/7100\/416&quot;,&quot;417&quot;:&quot;\/image\/7100\/417&quot;,&quot;418&quot;:&quot;\/image\/7100\/418&quot;,&quot;419&quot;:&quot;\/image\/7100\/419&quot;,&quot;42&quot;:&quot;\/image\/7100\/loge-baseline-42&quot;,&quot;420&quot;:&quot;\/image\/7100\/420&quot;,&quot;421&quot;:&quot;\/image\/7100\/421&quot;,&quot;422&quot;:&quot;\/image\/7100\/422&quot;,&quot;423&quot;:&quot;\/image\/7100\/423&quot;,&quot;424&quot;:&quot;\/image\/7100\/424&quot;,&quot;425&quot;:&quot;\/image\/7100\/425&quot;,&quot;426&quot;:&quot;\/image\/7100\/426&quot;,&quot;427&quot;:&quot;\/image\/7100\/427&quot;,&quot;428&quot;:&quot;\/image\/7100\/428&quot;,&quot;43&quot;:&quot;\/image\/7100\/loge-baseline-43&quot;,&quot;44&quot;:&quot;\/image\/7100\/club-center-44&quot;,&quot;45&quot;:&quot;\/image\/7100\/club-center-45&quot;,&quot;46&quot;:&quot;\/image\/7100\/club-center-46&quot;,&quot;47&quot;:&quot;\/image\/7100\/club-center-47&quot;,&quot;48&quot;:&quot;\/image\/7100\/club-center-48&quot;,&quot;49&quot;:&quot;\/image\/7100\/club-center-49&quot;,&quot;5&quot;:&quot;\/image\/7100\/5&quot;,&quot;50&quot;:&quot;\/image\/7100\/club-center-50&quot;,&quot;51&quot;:&quot;\/image\/7100\/club-center-51&quot;,&quot;52&quot;:&quot;\/image\/7100\/club-center-52&quot;,&quot;53&quot;:&quot;\/image\/7100\/club-center-53&quot;,&quot;54&quot;:&quot;\/image\/7100\/club-center-54&quot;,&quot;55&quot;:&quot;\/image\/7100\/club-center-55&quot;,&quot;56&quot;:&quot;\/image\/7100\/club-center-56&quot;,&quot;57&quot;:&quot;\/image\/7100\/club-center-57&quot;,&quot;58&quot;:&quot;\/image\/7100\/club-center-58&quot;,&quot;59&quot;:&quot;\/image\/7100\/club-center-59&quot;,&quot;6&quot;:&quot;\/image\/7100\/6&quot;,&quot;60&quot;:&quot;\/image\/7100\/club-center-60&quot;,&quot;61&quot;:&quot;\/image\/7100\/club-center-61&quot;,&quot;62&quot;:&quot;\/image\/7100\/loge-baseline-62&quot;,&quot;63&quot;:&quot;\/image\/7100\/loge-baseline-63&quot;,&quot;64&quot;:&quot;\/image\/7100\/loge-baseline-64&quot;,&quot;65&quot;:&quot;\/image\/7100\/loge-baseline-65&quot;,&quot;66&quot;:&quot;\/image\/7100\/loge-baseline-66&quot;,&quot;67&quot;:&quot;\/image\/7100\/loge-baseline-67&quot;,&quot;68&quot;:&quot;\/image\/7100\/loge-baseline-68&quot;,&quot;69&quot;:&quot;\/image\/7100\/loge-baseline-69&quot;,&quot;7&quot;:&quot;\/image\/7100\/7&quot;,&quot;70&quot;:&quot;\/image\/7100\/loge-baseline-70&quot;,&quot;71&quot;:&quot;\/image\/7100\/loge-baseline-71&quot;,&quot;72&quot;:&quot;\/image\/7100\/loge-baseline-72&quot;,&quot;73&quot;:&quot;\/image\/7100\/club-center-73&quot;,&quot;74&quot;:&quot;\/image\/7100\/club-center-74&quot;,&quot;75&quot;:&quot;\/image\/7100\/club-center-75&quot;,&quot;76&quot;:&quot;\/image\/7100\/club-center-76&quot;,&quot;77&quot;:&quot;\/image\/7100\/club-center-77&quot;,&quot;78&quot;:&quot;\/image\/7100\/club-center-78&quot;,&quot;79&quot;:&quot;\/image\/7100\/club-center-79&quot;,&quot;8&quot;:&quot;\/image\/7100\/8&quot;,&quot;80&quot;:&quot;\/image\/7100\/club-center-80&quot;,&quot;81&quot;:&quot;\/image\/7100\/club-center-81&quot;,&quot;82&quot;:&quot;\/image\/7100\/club-center-82&quot;,&quot;83&quot;:&quot;\/image\/7100\/club-center-83&quot;,&quot;84&quot;:&quot;\/image\/7100\/club-center-84&quot;,&quot;85&quot;:&quot;\/image\/7100\/club-center-85&quot;,&quot;86&quot;:&quot;\/image\/7100\/club-center-86&quot;,&quot;87&quot;:&quot;\/image\/7100\/club-center-87&quot;,&quot;88&quot;:&quot;\/image\/7100\/club-center-88&quot;,&quot;89&quot;:&quot;\/image\/7100\/club-center-89&quot;,&quot;9&quot;:&quot;\/image\/7100\/9&quot;,&quot;90&quot;:&quot;\/image\/7100\/club-center-90&quot;,&quot;91&quot;:&quot;\/image\/7100\/loge-baseline-91&quot;,&quot;92&quot;:&quot;\/image\/7100\/loge-baseline-92&quot;,&quot;93&quot;:&quot;\/image\/7100\/loge-baseline-93&quot;,&quot;94&quot;:&quot;\/image\/7100\/loge-baseline-94&quot;,&quot;95&quot;:&quot;\/image\/7100\/loge-baseline-95&quot;,&quot;96&quot;:&quot;\/image\/7100\/loge-baseline-96&quot;,&quot;97&quot;:&quot;\/image\/7100\/loge-baseline-97&quot;},
+          hide_unmappable: false        });
+
+        var hlight_data = null;
+    &lt;/script&gt;
+
+
+    &lt;script type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;
+      _gaq.push(['_trackEvent', 'impression', 'event-page',        undefined, undefined, true]);
+      _gaq.push(['_trackEvent', 'event-show', 'venue',             &quot;Madison Square Garden&quot;, undefined, true]);
+      _gaq.push(['_trackEvent', 'event-show', 'primary_performer', &quot;New York Knicks&quot;, undefined, true]);
+      _gaq.push(['_trackEvent', 'event-show', 'date_diff',         53, undefined, true]);
+      _gaq.push(['_trackEvent', 'event-show', 'is_mapped',         &quot;Is Mapped&quot;, undefined, true]);
+
+      jQuery(&quot;#share-email-button&quot;).click(function(e) {
+        var btn = jQuery(this);
+        SG.share_email({
+          callback: function() {
+            if (SG.map) SG.map.track(&quot;alert-create&quot;);
+          }
+        });
+        if (SG.map) SG.map.track(&quot;share-email-click&quot;);
+        return false;
+      });
+
+      SG.load_script_async(
+        &quot;http://platform.twitter.com/widgets.js&quot;,
+        function () { return window.twttr; },
+        function () {
+          twttr.events.bind('tweet', function(event) {
+            _gaq.push(['_trackEvent', 'social', 'event-page', 'twitter', undefined, true]);
+          });
+        }
+      );
+
+      jQuery(document).bind(&quot;fb:init&quot;, function () {
+        SG.like_button(jQuery(&quot;#fb-like-wrap&quot;), {
+          &quot;action&quot;:   &quot;like&quot;,
+          &quot;url&quot;:      app.event.get(&quot;absolute_url&quot;),
+          &quot;style&quot;:    &quot;width:50px; height:20px; left: 0; position: relative; bottom:0.5px;&quot;,
+          &quot;colorscheme&quot;: &quot;light&quot;,
+          &quot;track&quot;: {
+            &quot;category&quot;:       &quot;share:event:&quot; + app.event.get(&quot;id&quot;),
+            &quot;detail&quot;:         &quot;fb:like:event-page:v1&quot;,
+            &quot;event_type&quot;:     app.event.get(&quot;type&quot;),
+            &quot;venue_id&quot;:       app.venue.get(&quot;id&quot;),
+            &quot;has_face_value&quot;: event_info.has_face_value ? 1 : 0
+          }
+        });
+      });
+    &lt;/script&gt;
+
+    &lt;style type=&quot;text/css&quot;&gt;
+    .no-map .zoom { display:none; }
+    .no-map .listing .deal-quality { display:none; }
+    .no-map .zoom-here, .popup .zoom-here { display:none !important; }
+    .no-map .key { display:none; }
+    .no-map #sort-bar .deal-quality-help { display:none; }
+    .no-map #dealScoreInfo { display: none; }
+    &lt;/style&gt;
+
+
+    &lt;div id=&quot;login-popup&quot; class=&quot;popupv3 login-popup&quot; style=&quot;display:none&quot;&gt;
+    &lt;div class=&quot;header&quot;&gt;
+        &lt;div class=&quot;header-inner&quot;&gt;
+            &lt;h2&gt;Log in&lt;/h2&gt;
+            &lt;a href=&quot;#&quot; id=&quot;popup-close&quot; class=&quot;close&quot;&gt;&lt;/a&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;header-end&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;body&quot;&gt;
+
+        &lt;!-- Facebook Login --&gt;
+
+        &lt;div class=&quot;facebook-login&quot;&gt;
+
+            &lt;div class=&quot;facebook-logo&quot;&gt;&lt;/div&gt;
+
+            &lt;div class=&quot;facebook-label&quot;&gt;
+                Login using Facebook
+                &lt;span&gt;for one-click sign on&lt;/span&gt;
+            &lt;/div&gt;
+
+            &lt;a class=&quot;facebook-button&quot; href=&quot;#&quot; onclick=&quot;SG.fb_login();  return false;&quot;&gt;Login with Facebook &amp;rsaquo;&lt;/a&gt;
+
+            &lt;div style=&quot;display: none;&quot;&gt;
+               &lt;form action=&quot;/fblogin/&quot; method=&quot;post&quot; id=&quot;fblogin&quot;&gt;&lt;/form&gt;
+           &lt;/div&gt;
+
+            &lt;div class=&quot;facebook-explain&quot;&gt;
+                Don't worry, we won't post anything to your wall or your friends' walls.
+            &lt;/div&gt;
+
+            &lt;div class=&quot;login-buttons&quot;&gt;
+                &lt;a href=&quot;#&quot; onclick=&quot;jQuery('.facebook-login').hide(); jQuery('#login-hidden').show(); jQuery('#login_email').focus(); return false;&quot;&gt;Login without Facebook &amp;rsaquo;&lt;/a&gt;
+                &lt;a href=&quot;#&quot; onclick=&quot;jQuery('.facebook-login').hide(); jQuery('#login-hidden').show(); jQuery('#user_email').focus(); return false;&quot;&gt;Register without Facebook &amp;rsaquo;&lt;/a&gt;
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+
+
+        &lt;!-- Login Forms --&gt;
+
+        &lt;div id=&quot;login-hidden&quot; class=&quot;login-hidden&quot; style=&quot;display: none;&quot;&gt;
+            &lt;div class=&quot;form-left&quot;&gt;
+                &lt;h2&gt;Login&lt;/h2&gt;
+                &lt;div class=&quot;validationErrors&quot;&gt;
+                    &lt;div style=&quot;display:none;&quot; class=&quot;form_error&quot; id=&quot;login_invalid&quot;&gt;Your login is invalid. Please try again.&lt;/div&gt;
+                    &lt;div style=&quot;display:none;&quot; class=&quot;form_error&quot; id=&quot;login_missing&quot;&gt;Please enter both your email and password.&lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;form id=&quot;loginForm&quot; method=&quot;post&quot; action=&quot;/login/&quot;&gt;                    &lt;label&gt;Email&lt;/label&gt;
+                    &lt;input type=&quot;text&quot; class=&quot;text&quot; name=&quot;email&quot; value=&quot;&quot; tabindex=&quot;7&quot; id=&quot;login_email&quot; /&gt;
+
+                    &lt;label&gt;Password&lt;/label&gt;
+                    &lt;input type=&quot;password&quot; class=&quot;text&quot; name=&quot;password&quot; tabindex=&quot;8&quot; value=&quot;&quot; id=&quot;login_pass&quot; /&gt;
+
+                    &lt;div class=&quot;note&quot;&gt;
+                        Forgot your password?
+                        &lt;a href=&quot;/forgot_password/&quot;&gt;Click here to recover it.&lt;/a&gt;                    &lt;/div&gt;
+
+                                              &lt;input type=&quot;submit&quot; name=&quot;Log in&quot; class=&quot;blueBut&quot; tabindex=&quot;9&quot; alt=&quot;Log in for alerts on New York Knicks&quot; value=&quot;Log in&quot; /&gt;
+
+                          &lt;div id=&quot;login_loading&quot; style=&quot;display:none; float:left; padding: 10px 0px 0px 10px;&quot;&gt;
+                              &lt;img alt=&quot;loadingMiami Heat at New York Knicks...&quot; src=&quot;http://cdn.seatgeek.com/images/loaders/blueSpin.gif&quot; /&gt;                          &lt;/div&gt;
+
+                &lt;/form&gt;
+
+            &lt;/div&gt;
+            &lt;div class=&quot;form-right&quot;&gt;
+                &lt;h2&gt;Sign up&lt;/h2&gt;
+                &lt;div class=&quot;validationErrors&quot;&gt;
+                    &lt;div style=&quot;display:none;&quot; class=&quot;form_error&quot; id=&quot;login_invalid&quot;&gt;Your login is invalid. Please try again.&lt;/div&gt;
+                    &lt;div style=&quot;display:none;&quot; class=&quot;form_error&quot; id=&quot;login_missing&quot;&gt;Please enter both your email and password.&lt;/div&gt;
+                &lt;/div&gt;
+
+                                &lt;form id=&quot;registerForm&quot; method=&quot;post&quot; action=&quot;/register/&quot;&gt;                    &lt;input name=&quot;user[tos]&quot; type=&quot;hidden&quot; value=&quot;tos&quot; /&gt;
+
+                    &lt;label for=&quot;user_email&quot;&gt;Email address&lt;/label&gt;                    &lt;input type=&quot;text&quot; name=&quot;user[email]&quot; class=&quot;text&quot; tabindex=&quot;2&quot; id=&quot;user_email&quot; /&gt;
+                    &lt;label for=&quot;user_password&quot;&gt;Password&lt;/label&gt;                    &lt;input type=&quot;password&quot; name=&quot;user[password]&quot; class=&quot;text&quot; tabindex=&quot;2&quot; id=&quot;user_password&quot; /&gt;
+
+                    &lt;div class=&quot;fullname&quot;&gt;
+                        &lt;div class=&quot;first&quot;&gt;
+                            &lt;label for=&quot;user_first_name&quot;&gt;First Name&lt;/label&gt;                            &lt;input type=&quot;text&quot; name=&quot;user[first_name]&quot; class=&quot;text&quot; tabindex=&quot;3&quot; id=&quot;user_first_name&quot; /&gt;                        &lt;/div&gt;
+                        &lt;div class=&quot;last&quot;&gt;
+                            &lt;label for=&quot;user_last_name&quot;&gt;Last Name&lt;/label&gt;                            &lt;input type=&quot;text&quot; name=&quot;user[last_name]&quot; class=&quot;text&quot; tabindex=&quot;4&quot; id=&quot;user_last_name&quot; /&gt;                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class=&quot;note&quot;&gt;
+                        By clicking &quot;Sign up&quot;, you confirm that you accept the SeatGeek
+                        &lt;a href=&quot;/terms/&quot; target=&quot;_blank&quot;&gt;Terms of Use&lt;/a&gt;.
+                    &lt;/div&gt;
+
+                                            &lt;input type=&quot;submit&quot; tabindex=&quot;5&quot; class=&quot;blueBut&quot; name=&quot;Sign up&quot; alt=&quot;Sign up&quot; value=&quot;Register for SeatGeek&quot;/&gt;
+                        &lt;div id=&quot;login_loading&quot; style=&quot;display:none; float:left; padding: 0 0 0 17px;&quot;&gt;
+                            &lt;img alt=&quot;loading Miami Heat at New York Knicks...&quot; src=&quot;http://cdn.seatgeek.com/images/loaders/blueSpin.gif&quot; /&gt;                        &lt;/div&gt;
+
+                &lt;/form&gt;
+            &lt;/div&gt;
+
+            &lt;br style=&quot;clear: both;&quot;/&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;fb-loading&quot;&gt;
+          &lt;div&gt;Please wait while we log you in&amp;hellip;&lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;#&quot; onclick=&quot;jQuery('.fb-loading').hide();&quot;&gt;Close&lt;/a&gt;&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script type=&quot;text/javascript&quot;&gt;
+  jQuery('#sglightbox_modal').live('closeModal',  function() { jQuery('.fb-loading').hide(); });
+&lt;/script&gt;
+
+&lt;script type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;
+        var newwindow;
+    var intId;
+    function fbPopup() {
+        var  screenX    = typeof window.screenX != 'undefined' ? window.screenX : window.screenLeft,
+             screenY    = typeof window.screenY != 'undefined' ? window.screenY : window.screenTop,
+             outerWidth = typeof window.outerWidth != 'undefined' ? window.outerWidth : document.body.clientWidth,
+             outerHeight = typeof window.outerHeight != 'undefined' ? window.outerHeight : (document.body.clientHeight - 22),
+             width    = 500,
+             height   = 270,
+             left     = parseInt(screenX + ((outerWidth - width) / 2), 10),
+             top      = parseInt(screenY + ((outerHeight - height) / 2.5), 10),
+             features = (
+              'width=' + width +
+              ',height=' + height +
+              ',left=' + left +
+              ',top=' + top
+             );
+
+            newwindow=window.open('https://www.facebook.com/dialog/oauth?client_id=130121696309&amp;redirect_uri=http%3A%2F%2Fseatgeek.com%2Ffbcallback%2F%3Floginsucc%3D1&amp;state=2959d6793a2856c871ea90b60d9b3fd7&amp;display=popup&amp;cancel_url=http%3A%2F%2Fseatgeek.com%2Ffbcallback%2F%3Fcancel%3D1&amp;scope=email%2Cuser_birthday%2Cuser_events%2Cuser_hometown%2Cuser_interests%2Cuser_likes%2Cuser_location%2Cfriends_events%2Cfriends_interests%2Cfriends_activities%2Cfriends_location%2Cfriends_hometown%2Cfriends_likes%2Coffline_access','login_by_facebook',features);
+
+           if (window.focus) {newwindow.focus()}
+           return false;
+    }
+    &lt;/script&gt;    &lt;div id=&quot;share-email-popup&quot; class=&quot;popupv3&quot; style=&quot;display:none&quot;&gt;
+    &lt;div class=&quot;header&quot;&gt;
+        &lt;div class=&quot;header-inner&quot;&gt;
+            &lt;h2&gt;Share via Email&lt;/h2&gt;
+            &lt;a href=&quot;#&quot; id=&quot;popup-close&quot; class=&quot;close&quot;&gt;&lt;/a&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;header-end&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;body&quot;&gt;
+        &lt;div class=&quot;share-form&quot;&gt;
+            &lt;div class=&quot;validationErrors&quot;&gt;
+                &lt;div style=&quot;display:none;&quot; class=&quot;form_error&quot; id=&quot;to_email_invalid&quot;&gt;The email you want to send to is invalid.&lt;/div&gt;
+                &lt;div style=&quot;display:none;&quot; class=&quot;form_error&quot; id=&quot;from_email_invalid&quot;&gt;The email you want to send from is invalid.&lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;form id=&quot;shareEmailForm&quot; method=&quot;post&quot; action=&quot;/share_email/&quot;&gt;                &lt;input type=&quot;hidden&quot; name=&quot;event_id&quot; value=&quot;760318&quot;&gt;
+
+                &lt;label&gt;From Email&lt;/label&gt;
+                &lt;input type=&quot;text&quot; class=&quot;text&quot; name=&quot;from_email&quot; value=&quot;&quot; id=&quot;share_from_email&quot; /&gt;
+
+                &lt;label&gt;To Email&lt;/label&gt;
+                &lt;input type=&quot;text&quot; class=&quot;text&quot; name=&quot;to_email&quot; value=&quot;&quot; id=&quot;share_to_email&quot; /&gt;
+
+                &lt;label&gt;Subject&lt;/label&gt;
+                &lt;input type=&quot;text&quot; class=&quot;text&quot; name=&quot;subject&quot; value=&quot;Miami Heat at New York Knicks tickets for around $509.5&quot; id=&quot;share_subject&quot; /&gt;
+
+                &lt;label&gt;Message&lt;/label&gt;
+                &lt;textarea name=&quot;message&quot; id=&quot;share_message&quot;&gt;&lt;/textarea&gt;
+
+                &lt;div class=&quot;buttons&quot;&gt;
+                    &lt;input type=&quot;image&quot; src=&quot;http://cdn.seatgeek.com/images/map/btn-continue.png&quot; alt=&quot;Share&quot; value=&quot;Share&quot; /&gt;
+                &lt;/div&gt;
+
+                &lt;div id=&quot;share_loading&quot; style=&quot;display:none; float:left; padding: 10px 0px 0px 10px;&quot;&gt;
+                    &lt;img alt=&quot;loading...&quot; src=&quot;http://cdn.seatgeek.com/images/loaders/blueSpin.gif&quot; /&gt;                &lt;/div&gt;
+            &lt;/form&gt;
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;footer&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+    &lt;div id=&quot;ticket-analytics-popup&quot; class=&quot;popupv3&quot; style=&quot;display:none&quot;&gt;
+    &lt;div class=&quot;header&quot;&gt;
+        &lt;div class=&quot;header-inner&quot;&gt;
+            &lt;h2&gt;Ticket Analytics&lt;/h2&gt;
+            &lt;a href=&quot;#&quot; id=&quot;popup-close&quot; class=&quot;close&quot;&gt;&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;header-end&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;body&quot;&gt;
+
+        &lt;div class=&quot;analytics-stats&quot;&gt;
+            &lt;label&gt;Average Ticket Price&lt;/label&gt;
+            &lt;div id=&quot;avg_price&quot;&gt;&lt;img src=&quot;http://cdn.seatgeek.com/images/loaders/searchLoader.gif&quot; alt=&quot;loading average ticket price&quot; style=&quot;margin:10px 0 10px 45px;&quot;/&gt;&lt;/div&gt;
+
+            &lt;label&gt;Average % Face Value&lt;/label&gt;
+            &lt;div id=&quot;avg_price_ratio&quot;&gt;&amp;hellip;&lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;analytics-graph&quot;&gt;
+          &lt;h4&gt;Historical prices&lt;/h4&gt;
+          &lt;div class=&quot;inner&quot; style=&quot;height:300px&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;br style=&quot;clear: both;&quot;/&gt;
+    &lt;/div&gt;
+&lt;/div&gt;    &lt;div id=&quot;pre-ebay-warning&quot; style=&quot;display:none&quot; class=&quot;popupv3 infoPopup ip presale-checkout-confirmation&quot;&gt;
+    &lt;div class=&quot;header&quot;&gt;
+        &lt;div class=&quot;header-inner&quot;&gt;
+        &lt;h2 class=&quot;title&quot;&gt;Before You Buy&lt;/h2&gt;
+        &lt;a href=&quot;#&quot; id=&quot;popup-close&quot; class=&quot;close&quot;&gt;&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;header-end&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;body&quot;&gt;
+        &lt;div class=&quot;tab&quot;&gt;
+        &lt;div class=&quot;left-col&quot;&gt;
+            &lt;p&gt;eBay sellers often change their listings (even the
+                event can change!).&lt;br/&gt;&lt;strong&gt;Please double check your tickets before you buy.&lt;/strong&gt;&lt;/p&gt;
+            &lt;table&gt;
+                &lt;tr class=&quot;event-info&quot;&gt;
+                    &lt;td class=&quot;type&quot;&gt;Event info&lt;/td&gt;
+                    &lt;td&gt;
+                        &lt;div class=&quot;where&quot;&gt;&lt;span class=&quot;venue&quot;&gt;&lt;/span&gt;&amp;nbsp;(&lt;span class=&quot;location&quot;&gt;&lt;/span&gt;)&lt;/div&gt;
+                        &lt;div class=&quot;datetime&quot;&gt;&lt;/div&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr class=&quot;ticket-info&quot;&gt;
+                    &lt;td class=&quot;type&quot;&gt;Ticket info&lt;/td&gt;
+                    &lt;td&gt;
+                        &lt;div&gt;Section:&amp;nbsp;&lt;strong&gt;&lt;span class=&quot;section&quot;&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/div&gt;
+                        &lt;div&gt;&lt;span class=&quot;row-container&quot;&gt;&lt;strong&gt;&lt;span class=&quot;row&quot;&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/div&gt;
+                        &lt;div&gt;Quantity:&amp;nbsp;&lt;strong&gt;&lt;span class=&quot;quantity&quot;&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/div&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr class=&quot;price-info&quot;&gt;
+                    &lt;td class=&quot;type&quot;&gt;Price info&lt;/td&gt;
+                    &lt;td&gt;
+                        &lt;div&gt;Per ticket:&amp;nbsp;&lt;strong&gt;$&lt;span class=&quot;price&quot;&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/div&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;right&quot;&gt;
+            &lt;a href=&quot;#&quot; target=&quot;new&quot; class=&quot;go-link&quot;&gt;&lt;span id=&quot;cartButton&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+            &lt;div class=&quot;new-window&quot;&gt;This will open a new window&lt;/div&gt;
+            &lt;img class=&quot;market-logo&quot; src=&quot;about:blank&quot; style=&quot;display: none&quot;&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;    &lt;div id=&quot;post-purchase&quot; style=&quot;display:none&quot; class=&quot;popupv3 ip infoPopup&quot;&gt;
+    &lt;div class=&quot;header&quot;&gt;
+        &lt;div class=&quot;header-inner&quot;&gt;
+            &lt;h2&gt;We hope you have a blast!&lt;/h2&gt;
+            &lt;a href=&quot;#&quot; id=&quot;popup-close&quot; class=&quot;close&quot;&gt;&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;header-end&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;body&quot;&gt;
+      &lt;div class=&quot;tab&quot;&gt;
+        &lt;div class=&quot;tab-div&quot;&gt;
+          &lt;h4&gt;Tell friends you're going!&lt;/h4&gt;
+          &lt;script type=&quot;text/javascript&quot;&gt;SG.load_script_async(&quot;http://platform.twitter.com/widgets.js&quot;);&lt;/script&gt;
+          &lt;div&gt;
+            &lt;p&gt;The more the merrier, right? Let folks know you're going:&lt;/p&gt;
+              &lt;script&gt;
+                  function facebookpopup() {
+                      var fb = jQuery('#facebook-button')
+                      FB.ui(
+                        {
+                          method: 'feed',
+                          name: fb.data().name,
+                          link: fb.data().link,
+                          picture: fb.data().picture,
+                          description: fb.data().description,
+                          user_message_prompt: fb.data().prompt
+                        }
+                      );
+                  }
+                  function tweetpopup() {
+                      jQuery('#twitter-loading').show();
+                      var tb = jQuery('#tweet-button');
+
+                      // Set default URL as homepage
+                      var _url = 'http://seatgeek.com';
+
+                      // Create short URL
+                      var lookupUrl = '/utility/shorten/?loc=' + document.location.href + '/';
+                      jQuery.ajax({
+                        url: lookupUrl,
+                        dataType: 'json',
+                        async: false, 
+                        success: function(json) { _url = json.shortUrl; }
+                      });
+
+                      //var _url = tb.data().url;
+                      //var _counturl = tb.data().counturl;
+                      var _text = tb.data().text;
+                      var _related = tb.data().related;
+
+                      // Generate full Twitter url
+                      var full = &quot;http://twitter.com/share?url=&quot; + encodeURIComponent(_url)
+                          + &quot;&amp;text=&quot; + encodeURIComponent(_text)
+                          //+ &quot;&amp;counturl=&quot; + encodeURIComponent(_counturl)
+                          + &quot;&amp;related=&quot; + encodeURIComponent(_related)
+                          + &quot;&amp;count=none&quot;;
+                      jQuery('#twitter-loading').hide();                          
+                      window.open(full, &quot;tweet&quot;, &quot;height=450,width=550,resizable=1&quot; );
+                  }
+              &lt;/script&gt;
+
+              &lt;p&gt;
+              &lt;a id=&quot;facebook-button&quot; class=&quot;socialInvite&quot;
+                 data-name=&quot;SeatGeek: The Ultimate Ticket Search Engine&quot;
+                 data-description=&quot;SeatGeek is a search site where fans comparison shop to find the best deals on sports, concert, and theater tickets. 100% free.&quot;
+                 data-prompt=&quot;What's on your mind?&quot;
+                 data-link=&quot;&quot;
+                 data-picture=&quot;http://www.seatgeek.com/images/sgSpotlight.png&quot;
+                 href=&quot;#&quot; onClick=&quot;facebookpopup()&quot;&gt;
+              &lt;/a&gt;
+              &lt;a id=&quot;tweet-button&quot; class=&quot;socialInvite&quot; href=&quot;#&quot;
+                  target=&quot;_blank&quot; onClick=&quot;tweetpopup(); return false;&quot;
+                  data-url=&quot;&quot;
+                  data-count=&quot;vertical&quot;
+                  data-counturl=&quot;www.seatgeek.com/register&quot;
+                  data-text=&quot;Just used @SeatGeek to find an insanely good deal on tickets to Miami Heat at New York Knicks! &quot;
+                  data-related=&quot;seatgeek:The SeatGeek Twitter Feed&quot;
+                  rel=&quot;nofollow&quot;&gt;
+             &lt;/a&gt;
+             &lt;/p&gt;&lt;br style=&quot;clear: both;&quot;/&gt;
+          &lt;/div&gt;
+
+                        &lt;img src=&quot;http://cdn.seatgeek.com/images/map/new/ajax-loader.gif&quot; width=&quot;24&quot; height=&quot;24&quot; style=&quot;display: none;&quot; id=&quot;twitter-loading&quot; alt=&quot;tweet New York Knicks!&quot;/&gt;
+                  &lt;/div&gt;
+
+        &lt;div class=&quot;tab-div&quot;&gt;
+          &lt;h4&gt;Get deals in your area&lt;/h4&gt;
+
+
+&lt;div id=&quot;get_email_updates&quot; class=&quot;email_box&quot;&gt;
+    &lt;script type=&quot;text/javascript&quot;&gt;
+        jQuery(function() {
+            jQuery(&quot;#get_email_updates form&quot;).unbind('submit'); // HACK b/c this code seems to run twice on the event page
+            jQuery(&quot;#get_email_updates form&quot;).submit(function(e) {
+                var dataString = 'email=' + encodeURIComponent(jQuery('#email').val());
+                dataString += '&amp;reference=' + encodeURIComponent(&quot;post_purchase&quot;);
+                dataString += '&amp;concerts=1&amp;mlb=1&amp;nba=1&amp;nfl=1&amp;nhl=1&amp;theater=1';
+                jQuery.ajax({
+                    type: &quot;POST&quot;,
+                    url: '/main/addemail/',
+                    data: dataString,
+                    beforeSend: function(data) {
+                        jQuery('#email_success').fadeOut(200);
+                        jQuery('#indicator').show();
+                        _gaq.push(['_trackEvent', 'email', 'newsletter', 'signup', undefined, true]);
+                    },
+                    success: function(data) {
+                        jQuery('#indicator').hide()
+                        jQuery('#email_success').html(data);
+                        jQuery('#email_success').fadeIn(1000);
+                        return false;
+                    },
+                    error: function() {
+                        jQuery('#email_success').html(&quot;&lt;p&gt;An error occured. Please try submitting again.&lt;/p&gt;&quot;);
+                        jQuery('#email_success').fadeIn(200);
+                    }
+                });
+                return false;
+            });
+        });
+    &lt;/script&gt;
+    &lt;form action=&quot;/main/addemail/&quot; method=&quot;post&quot; id=&quot;email_deals_form&quot;&gt;
+          &lt;p&gt;We&#x2019;ll email you occasionally with deals on nearby events.&lt;/p&gt;
+          &lt;div style=&quot;display:none&quot; id=&quot;email_success&quot;&gt;
+              &lt;p style=&quot;color: rgb(0, 92, 150); font-size: 14px; float: none; padding: 10px 0;&quot;&gt;Thanks, your email has been added&lt;/p&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;input_bg&quot;&gt;
+              &lt;input id=&quot;email&quot; name=&quot;email&quot; class=&quot;ghosted&quot; type=&quot;text&quot; value=&quot;Your email address&quot; /&gt;
+          &lt;/div&gt;
+          &lt;img id=&quot;indicator&quot; style=&quot;display:none&quot; src=&quot;http://cdn.seatgeek.com/images/loaders/localLoader.gif&quot; alt=&quot;loading...&quot; /&gt;
+          &lt;div class=&quot;sg-button-set&quot;&gt;
+              &lt;a href=&quot;#&quot; class=&quot;sg-button&quot; id=&quot;email_commit&quot; alt=&quot;Sign up for email updates&quot; onclick=&quot;jQuery('#email_deals_form').submit(); return false;&quot;&gt;Sign up &amp;rarr;&lt;/a&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+    &lt;/form&gt;
+&lt;/div&gt;        &lt;/div&gt;
+
+        &lt;div style=&quot;clear: both;&quot; class=&quot;clear&quot;&gt;&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+    &lt;div id=&quot;deal-score-explanation-popup&quot; class=&quot;infoPopup popupv3 ip ds&quot; style=&quot;display:none&quot;&gt;
+    &lt;div class=&quot;header&quot;&gt;
+        &lt;div class=&quot;header-inner&quot;&gt;
+            &lt;h2&gt;Learn about Deal Score&amp;trade;&lt;/h2&gt;
+            &lt;a href=&quot;#&quot; id=&quot;popup-close&quot; class=&quot;close&quot;&gt;&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;header-end&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;body&quot;&gt;
+
+        &lt;ul class=&quot;tabset&quot;&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;selected&quot; rel=&quot;about&quot;&gt;What is Deal Score?&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot; rel=&quot;helpful&quot;&gt;Why is Deal Score helpful?&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+
+        &lt;!-- What is Deal Score? tab --&gt;
+        &lt;div class=&quot;ds-about tab&quot;&gt;
+            &lt;h4&gt;Find the best deals with Deal Score&lt;small&gt;&lt;small&gt;&lt;sup&gt;&lt;sup&gt;&amp;trade;&lt;/sup&gt;&lt;/sup&gt;&lt;/small&gt;&lt;/small&gt;&lt;/h4&gt;
+            &lt;p&gt;SeatGeek's Deal Score&amp;trade; &lt;strong&gt;shows you the best deals&lt;/strong&gt; by assigning a rating from &lt;span style=&quot;background: #00ae36;&quot; class=&quot;ds_example&quot;&gt;100 - Best Deal&lt;/span&gt; to &lt;span style=&quot;background: #d34a49;&quot; class=&quot;ds_example&quot;&gt;0 - Okay Deal&lt;/span&gt; to each ticket listing based on whether or not the ticket is an exceptional bargain.&lt;/p&gt;
+
+				    &lt;p&gt;Only the absolute best deals are given a Deal Score of 100. You should use Deal Score to help identify the best bargains.&lt;/p&gt;
+
+            &lt;div class=&quot;faq&quot;&gt;To learn about how Deal Score&amp;trade; is calculated, &lt;a target=&quot;_blank&quot; href=&quot;/main/faq/#dealScoreQuestion&quot;&gt;see our FAQ&lt;/a&gt;.&lt;/div&gt;
+
+            &lt;div class=&quot;sample&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;!-- Why is Deal Score helpful? tab --&gt;
+        &lt;div class=&quot;ds-helpful tab&quot; style=&quot;display: none;&quot;&gt;
+            &lt;h4&gt;Why is Deal Score&lt;small&gt;&lt;small&gt;&lt;sup&gt;&lt;sup&gt;&amp;trade;&lt;/sup&gt;&lt;/sup&gt;&lt;/small&gt;&lt;/small&gt; helpful?&lt;/h4&gt;
+            &lt;p&gt;For some events on SeatGeek, there are &lt;strong&gt;over 10,000 tickets&lt;/strong&gt; available.  It can be quite &lt;strong&gt;difficult to sort&lt;/strong&gt; through all of those tickets and identify the best deals.&lt;/p&gt; 
+
+			      &lt;p&gt;This is further complicated by the fact that, when buying tickets for live events, you &lt;strong&gt;cannot shop based on price alone&lt;/strong&gt;. A courtside ticket for $50 is probably a better deal than a bleacher seat for $30, but this might not be apparent if you sorted by price.&lt;/p&gt;
+
+			      &lt;p&gt;Deal Score enables you to &lt;strong&gt;make apples-to-apples comparisons&lt;/strong&gt; among tickets that are in different parts of an arena.&lt;/p&gt;
+
+            &lt;div class=&quot;faq&quot;&gt;To learn about how Deal Score&amp;trade; is calculated, &lt;a target=&quot;_blank&quot; href=&quot;/main/faq/#dealScoreQuestion&quot;&gt;see our FAQ&lt;/a&gt;.&lt;/div&gt;
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;        &lt;div id=&quot;about-event-popup&quot; class=&quot;popupv3 ip infoPopup&quot; style=&quot;display:none&quot;&gt;
+      &lt;div class=&quot;header&quot;&gt;
+          &lt;div class=&quot;header-inner&quot;&gt;
+              &lt;h2&gt;About Miami Heat at New York Knicks&lt;/h2&gt;
+              &lt;a href=&quot;#&quot; id=&quot;popup-close&quot; class=&quot;close&quot;&gt;&lt;/a&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;header-end&quot;&gt;&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;body&quot;&gt;
+        &lt;div class=&quot;tab&quot;&gt;
+          &lt;h4&gt;New York Knicks tickets&lt;/h4&gt;
+
+
+                      &lt;p&gt;On April 15, 2012, the Heat meets the Knicks in New York, NY at the Madison Square Garden and it what should be a very exciting matchup. If this 04/15 game at the Madison Square Garden will be your first, use our interactive Madison Square Garden seating chart to get a feel of the stadium. Seasoned attendee? Skip the learning and jump straight into the good stuff. We have Deal Scores for all tickets for the Heat at Knicks on 04/15/2012 to make sure you get the best seat in Madison Square Garden.&lt;/p&gt;
+
+            &lt;p&gt;For &lt;strong&gt;Heat Knicks&lt;/strong&gt; New York tickets on 04/15, prices range from $217 to $24460, with an average ticket price of $509.5. Enjoy!&lt;/p&gt;
+
+
+                  &lt;/div&gt;
+      &lt;/div&gt;
+  &lt;/div&gt;
+
+
+&lt;!-- Start Quantcast Tag --&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+_qoptions={qacct:&quot;p-d3L22B6uWaIuk&quot;,labels:&quot;_fp.event.Homepage&quot;};
+&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://edge.quantserve.com/quant.js&quot;&gt;&lt;/script&gt;
+&lt;noscript&gt;
+&lt;img src=&quot;http://pixel.quantserve.com/pixel/p-d3L22B6uWaIuk.gif?labels=_fp.event.Homepage&quot; style=&quot;display: none;&quot; border=&quot;0&quot; height=&quot;1&quot; width=&quot;1&quot; alt=&quot;Quantcast&quot;/&gt;
+&lt;/noscript&gt;
+&lt;!-- End Quantcast tag --&gt;
+
+&lt;!-- Begin comScore Tag --&gt;
+&lt;script&gt;
+  var _comscore = _comscore || [];
+  _comscore.push({ c1: &quot;2&quot;, c2: &quot;13258229&quot; });
+  (function() {
+    var s = document.createElement(&quot;script&quot;), el = document.getElementsByTagName(&quot;script&quot;)[0]; s.async = true;
+    s.src = (document.location.protocol == &quot;https:&quot; ? &quot;https://sb&quot; : &quot;http://b&quot;) + &quot;.scorecardresearch.com/beacon.js&quot;;
+    el.parentNode.insertBefore(s, el);
+  })();
+&lt;/script&gt;
+&lt;noscript&gt;
+  &lt;img src=&quot;http://b.scorecardresearch.com/p?c1=2&amp;c2=13258229&amp;cv=2.0&amp;cj=1&quot; /&gt;
+&lt;/noscript&gt;
+&lt;!-- End comScore Tag --&gt;
+
+    &lt;!-- ga_footer partial --&gt;
+
+    &lt;script type=&quot;text/javascript&quot;&gt;
+  var _gaq = _gaq || [];
+  _gaq.push(['gwo._setAccount', &quot;UA-15797276-1&quot;]);
+  _gaq.push(['gwo._trackPageview', '/1360164887/goal']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+&lt;/script&gt;  &lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+&hellip;</pre>
+    </div>
+    <div class="fancy json">
+      <!-- <h4>JSON</h4> -->
+      <pre>{
+    "stats": {
+        "listing_count": 3427,
+        "average_price": 443,
+        "lowest_price": 194,
+        "highest_price": 24460
+    },
+    "title": "Miami Heat at New York Knicks",
+    "url": "http://seatgeek.com/heat-knicks-tickets/4-15-2012-new-york-new-york-madison-square-garden/nba/760318/",
+    "datetime_local": "2012-04-15T13:00:00",
+    "performers": [
+        {
+            "home_team": true,
+            "name": "New York Knicks",
+            "short_name": "Knicks",
+            "url": "http://seatgeek.com/new-york-knicks-tickets/",
+            "image": "http://cdn.seatgeek.com/images/bandshuge/band_2090.jpg",
+            "primary": true,
+            "id": 2090,
+            "score": 528395,
+            "type": "nba",
+            "slug": "new-york-knicks"
+        },
+        {
+            "away_team": true,
+            "name": "Miami Heat",
+            "short_name": "Heat",
+            "url": "http://seatgeek.com/miami-heat-tickets/",
+            "image": "http://cdn.seatgeek.com/images/bandshuge/band_2100.jpg",
+            "id": 2100,
+            "score": 316280,
+            "type": "nba",
+            "slug": "miami-heat"
+        }
+    ],
+    "venue": {
+        "city": "New York",
+        "name": "Madison Square Garden",
+        "extended_address": null,
+        "url": "http://seatgeek.com/madison-square-garden-tickets/",
+        "country": "US",
+        "state": "NY",
+        "score": 912.651,
+        "postal_code": "10001",
+        "location": {
+            "lat": 40.75181,
+            "lon": -73.99249
+        },
+        "address": "4 Pennsylvania Plaza",
+        "id": 93
+    },
+    "short_title": "Heat @ Knicks",
+    "datetime_utc": "2012-04-15T17:00:00",
+    "score": 890786,
+    "taxonomies": [
+        {
+            "parent_id": null,
+            "id": 1000000,
+            "name": "sports"
+        },
+        {
+            "parent_id": 1000000,
+            "id": 1030000,
+            "name": "basketball"
+        },
+        {
+            "parent_id": 1030000,
+            "id": 1030100,
+            "name": "nba"
+        }
+    ],
+    "type": "nba",
+    "id": 760318
+}</pre>
+    </div>
 </section>
 
 <section class="slide">
