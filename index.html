@@ -7,7 +7,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-	<title>Getting Started Git</title>
+	<title>SeatGeek API v2</title>
 
 	<!-- Core and extension CSS files -->
 	<link rel="stylesheet" href="assets/core/deck.core.css">
@@ -21,6 +21,7 @@
 	<link rel="stylesheet" id="transition-theme-link" href="assets/themes/transition/horizontal-slide.css">
 
 	<script src="assets/modernizr.custom.js"></script>
+
 </head>
 
 <body class="deck-container">
@@ -34,25 +35,26 @@
 </section>
 
 <section class="slide">
-    <h1>What is an API</h1>
+    <h2>What is an API</h2>
     <p>And API is...</p>
 </section>
 
 <section class="slide">
-    <h1>HTML vs JSON</h1>
+    <h2>HTML vs JSON</h2>
     <p>Comparison Please</p>
 </section>
 
 <section class="slide">
-    <h1>Example API Queries and Responses</h1>
+    <h2>Example API Queries and Responses</h2>
     <p>JSON</p>
 </section>
 
 <section class="slide">
-    <h1>Autocomplete</h1>
-    <p>JSON</p>
-</section>
+    <h2>Autocomplete</h2>
+    <input type="text" id="autocomplete"/>
 
+    <ul id="results"></ul>
+</section>
 
   <!-- Grab CDN jQuery, with a protocol relative URL; fall back to local if offline -->
   <script src="//ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
@@ -67,6 +69,31 @@
 
 <!-- Specific to this page -->
 <script src="introduction.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#autocomplete').keyup(function(e) {
+        that = $(this);
+        $.ajax({
+            url: 'http://localhost:8080/events?q=' + that.val(),
+            data: {
+                sort: 'score.desc'
+            },
+            type: 'GET',
+            dataType: 'jsonp',
+            success: function(resp) {
+                $('#results').empty();
+                $.each(resp.events, function(i, event) {
+                    var $el = $('<li>');
+                    $('<a>').attr('href', event.url).html(event.title + ' (' + event.datetime_local + ')').appendTo($el);
+                    $el.appendTo('#results');
+                });
+            }
+        });
+    })
+});
+</script>
+
 
 </body>
 </html>
