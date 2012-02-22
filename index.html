@@ -42,10 +42,13 @@
 
 <section class="slide" id="html-vs-json">
     <h2>HTML vs JSON</h2>
-    <p>Comparison Please</p>
-    <div class="fancy html">
-      <!-- <h4>HTML</h4> -->
-      <pre>&lt;!DOCTYPE html&gt;
+    <div class="html-col">
+      <h3>query</h3>
+      <div class="fancy html"><pre>GET http://seatgeek.com/heat-knicks-tickets/4-15-2012-new-york-new-york-madison-square-garden/nba/760318/</pre></div>
+      <h3>response</h3>
+      <div class="fancy html">
+        <!-- <h4>HTML</h4> -->
+        <pre>&lt;!DOCTYPE html&gt;
 &lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot; xmlns:fb=&quot;http://www.facebook.com/2008/fbml&quot; xml:lang=&quot;en&quot; lang=&quot;en&quot;&gt;
 &lt;head&gt;
     &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=EmulateIE7&quot; /&gt;
@@ -1327,180 +1330,24 @@ _qoptions={qacct:&quot;p-d3L22B6uWaIuk&quot;,labels:&quot;_fp.event.Homepage&quo
 &lt;/body&gt;
 &lt;/html&gt;
 &hellip;</pre>
+      </div>
     </div>
-    <div class="fancy json">
-      <!-- <h4>JSON</h4> -->
-      <pre>{
-  "stats": {
-    "listing_count": 3427,
-    "average_price": 443,
-    "lowest_price": 194,
-    "highest_price": 24460
-  },
-  "title": "Miami Heat at New York Knicks",
-  "url": "http://seatgeek.com/heat-knicks-tickets/4-15-2012-new-york-new-york-madison-square-garden/nba/760318/",
-  "datetime_local": "2012-04-15T13:00:00",
-  "performers": [
-    {
-      "home_team": true,
-      "name": "New York Knicks",
-      "short_name": "Knicks",
-      "url": "http://seatgeek.com/new-york-knicks-tickets/",
-      "image": "http://cdn.seatgeek.com/images/bandshuge/band_2090.jpg",
-      "primary": true,
-      "id": 2090,
-      "score": 528395,
-      "type": "nba",
-      "slug": "new-york-knicks"
-    },
-    {
-      "away_team": true,
-      "name": "Miami Heat",
-      "short_name": "Heat",
-      "url": "http://seatgeek.com/miami-heat-tickets/",
-      "image": "http://cdn.seatgeek.com/images/bandshuge/band_2100.jpg",
-      "id": 2100,
-      "score": 316280,
-      "type": "nba",
-      "slug": "miami-heat"
-    }
-  ],
-  "venue": {
-    "city": "New York",
-    "name": "Madison Square Garden",
-    "extended_address": null,
-    "url": "http://seatgeek.com/madison-square-garden-tickets/",
-    "country": "US",
-    "state": "NY",
-    "score": 912.651,
-    "postal_code": "10001",
-    "location": {
-      "lat": 40.75181,
-      "lon": -73.99249
-    },
-    "address": "4 Pennsylvania Plaza",
-    "id": 93
-  },
-  "short_title": "Heat @ Knicks",
-  "datetime_utc": "2012-04-15T17:00:00",
-  "score": 890786,
-  "taxonomies": [
-    {
-      "parent_id": null,
-      "id": 1000000,
-      "name": "sports"
-    },
-    {
-      "parent_id": 1000000,
-      "id": 1030000,
-      "name": "basketball"
-    },
-    {
-      "parent_id": 1030000,
-      "id": 1030100,
-      "name": "nba"
-    }
-  ],
-  "type": "nba",
-  "id": 760318
-  }</pre>
-    </div>
+    <div class="json-col"><div data-query="/events/760318"></div></div>
 </section>
 
 <section class="slide">
-    <h2>Example API Queries and Responses</h2>
-    <h3>query</h3>
-    <div class="fancy json"><pre>http://api.seatgeek.com/events?performers[home_team].slug=new-york-yankees</pre></div>
+    <h2>Example API Queries: yankees home games</h2>
+    <div data-query="/events?performers[home_team].slug=new-york-yankees"></div>
+</section>
 
-    <h3>response</h3>
-    <div class="fancy json">
-      <pre>{
-  "meta": {
-    "per_page": 1,
-    "total": 196,
-    "page": 1,
-    "took": 2,
-    "geolocation": {
-      "is_located": false
-    }
-  },
-  "events": [
-    {
-      "stats": {
-        "listing_count": 488,
-        "average_price": 26,
-        "lowest_price": 7,
-        "highest_price": 246
-      },
-      "title": "Spring Training: South Florida Bulls at New York Yankees",
-      "url": "http://seatgeek.com/sf-bulls-yankees-tickets/3-2-2012-tampa-george-steinbrenner-field/mlb/785875/",
-      "datetime_local": "2012-03-02T13:05:00",
-      "performers": [
-        {
-          "home_team": true,
-          "name": "New York Yankees",
-          "short_name": "Yankees",
-          "url": "http://seatgeek.com/new-york-yankees-tickets/",
-          "image": "http://cdn.seatgeek.com/images/bandshuge/band_8.jpg",
-          "primary": true,
-          "id": 8,
-          "score": 717255,
-          "type": "mlb",
-          "slug": "new-york-yankees"
-        },
-        {
-          "away_team": true,
-          "name": "South Florida Bulls Baseball",
-          "short_name": "SF Bulls",
-          "url": "http://seatgeek.com/south-florida-bulls-baseball-tickets/",
-          "image": null,
-          "id": 9543,
-          "score": 0,
-          "type": "ncaa_baseball",
-          "slug": "south-florida-bulls-baseball"
-        }
-      ],
-      "venue": {
-        "city": "Tampa",
-        "name": "George Steinbrenner Field",
-        "extended_address": null,
-        "url": "http://seatgeek.com/george-steinbrenner-field-tickets/",
-        "country": "US",
-        "state": "FL",
-        "score": 209.735,
-        "postal_code": "33607",
-        "location": {
-          "lat": 27.9813,
-          "lon": -82.5084
-        },
-        "address": "3802 Dr Martin Luther King Jr Blvd",
-        "id": 3937
-      },
-      "short_title": "SF Bulls @ Yankees",
-      "datetime_utc": "2012-03-02T18:05:00",
-      "score": 266247,
-      "taxonomies": [
-        {
-          "parent_id": null,
-          "id": 1000000,
-          "name": "sports"
-        },
-        {
-          "parent_id": 1000000,
-          "id": 1010000,
-          "name": "baseball"
-        },
-        {
-          "parent_id": 1010000,
-          "id": 1010100,
-          "name": "mlb"
-        }
-      ],
-      "type": "mlb",
-      "id": 785875
-    }
-  ]
-}</pre>
+<section class="slide">
+    <h2>Example API Queries: subway series games</h2>
+    <div data-query="/events?performers[any].slug=new-york-yankees&amp;performers[any].slug=new-york-mets"></div>
+</section>
+
+<section class="slide">
+    <h2>Example API Queries: sports events near the office</h2>
+    <div data-query="/events?taxonomies.name=sports&amp;lon=-73.9763&amp;lat=40.7619"></div>
 </section>
 
 <section class="slide" id="seatgeek-instant">
@@ -1509,7 +1356,16 @@ _qoptions={qacct:&quot;p-d3L22B6uWaIuk&quot;,labels:&quot;_fp.event.Homepage&quo
       <div class="search-bg">
         <input type="text" id="autocomplete"/>
       </div>
-      <ul id="results"></ul>
+      <ul id="results">
+        <li style="color:#777">Type away&hellip;</li>
+      </ul>
+    </div>
+</section>
+
+<section class="slide" id="liverover">
+    <h2>LiveRover</h2>
+    <div class="liverover-wrap fancy">
+      <iframe src="http://liverover.com/"></iframe>
     </div>
 </section>
 
@@ -1535,29 +1391,48 @@ $(document).ready(function() {
     $('#autocomplete')
       .keyup(function(e) {
           that = $(this);
-          $.ajax({
-              url: 'http://api.seatgeek.com/2/events',
-              data: {
-                q:    that.val(),
-                sort: 'datetime_utc.asc'
-              },
-              type: 'GET',
-              dataType: 'jsonp',
-              success: function(resp) {
-                  $('#results').empty();
-                  $.each(resp.events, function(i, event) {
-                      var $el = $('<li>');
-                      $('<a>')
-                        .attr('href', event.url)
-                        .attr('target', '_blank')
-                        .html(event.title + ' &ndash; ' + event.datetime_local).appendTo($el);
-                      $el.appendTo('#results');
-                  });
-              }
-          });
+          if (that.val() == "") {
+            $('#results').empty();
+          } else {
+            $.ajax({
+                url: 'http://api.seatgeek.com/2/events',
+                data: {
+                  q:    that.val(),
+                  sort: 'datetime_utc.asc',
+                  per_page: 10
+                },
+                type: 'GET',
+                dataType: 'jsonp',
+                success: function(resp) {
+                    $('#results').empty();
+                    $.each(resp.events, function(i, event) {
+                        var $el = $('<li>');
+                        $('<a>')
+                          .attr('href', event.url)
+                          .attr('target', '_blank')
+                          .html(event.title + ' &ndash; ' + event.datetime_local).appendTo($el);
+                        $el.appendTo('#results');
+                    });
+                }
+            });
+          }
       })
       .focus(function (e) { $(this).parents(".search-bg").addClass("focused") })
       .blur( function (e) { $(this).parents(".search-bg").removeClass("focused") })
+    
+    $("*[data-query]").each(function () {
+      var $el = $(this),
+          url = 'http://api.seatgeek.com/2' + $el.attr("data-query");
+      $el.append('<h3>query</h3><div class="fancy json"><pre>GET ' + url + '</pre></div>');
+      $.ajax({
+          url: url,
+          type: 'GET',
+          dataType: 'jsonp',
+          success: function(resp) {
+            $el.append('<h3>response</h3><div class="fancy json"><pre>' + JSON.stringify(resp, undefined, 2) + '</pre></div>');
+          }
+      });
+    });
 });
 </script>
 
