@@ -53,7 +53,97 @@
 
 <section class="slide">
     <h2>Example API Queries and Responses</h2>
-    <p>JSON</p>
+    <h3>query</h3>
+    <pre><code>http://api.seatgeek.com/events?performers[home_team].slug=new-york-yankees</code></pre>
+
+    <h3>response</h3>
+    <pre><code class="json">{
+    "meta": {
+        "per_page": 1,
+        "total": 196,
+        "page": 1,
+        "took": 2,
+        "geolocation": {
+            "is_located": false
+        }
+    },
+    "events": [
+        {
+            "stats": {
+                "listing_count": 488,
+                "average_price": 26,
+                "lowest_price": 7,
+                "highest_price": 246
+            },
+            "title": "Spring Training: South Florida Bulls at New York Yankees",
+            "url": "http://seatgeek.com/sf-bulls-yankees-tickets/3-2-2012-tampa-george-steinbrenner-field/mlb/785875/",
+            "datetime_local": "2012-03-02T13:05:00",
+            "performers": [
+                {
+                    "home_team": true,
+                    "name": "New York Yankees",
+                    "short_name": "Yankees",
+                    "url": "http://seatgeek.com/new-york-yankees-tickets/",
+                    "image": "http://cdn.seatgeek.com/images/bandshuge/band_8.jpg",
+                    "primary": true,
+                    "id": 8,
+                    "score": 717255,
+                    "type": "mlb",
+                    "slug": "new-york-yankees"
+                },
+                {
+                    "away_team": true,
+                    "name": "South Florida Bulls Baseball",
+                    "short_name": "SF Bulls",
+                    "url": "http://seatgeek.com/south-florida-bulls-baseball-tickets/",
+                    "image": null,
+                    "id": 9543,
+                    "score": 0,
+                    "type": "ncaa_baseball",
+                    "slug": "south-florida-bulls-baseball"
+                }
+            ],
+            "venue": {
+                "city": "Tampa",
+                "name": "George Steinbrenner Field",
+                "extended_address": null,
+                "url": "http://seatgeek.com/george-steinbrenner-field-tickets/",
+                "country": "US",
+                "state": "FL",
+                "score": 209.735,
+                "postal_code": "33607",
+                "location": {
+                    "lat": 27.9813,
+                    "lon": -82.5084
+                },
+                "address": "3802 Dr Martin Luther King Jr Blvd",
+                "id": 3937
+            },
+            "short_title": "SF Bulls @ Yankees",
+            "datetime_utc": "2012-03-02T18:05:00",
+            "score": 266247,
+            "taxonomies": [
+                {
+                    "parent_id": null,
+                    "id": 1000000,
+                    "name": "sports"
+                },
+                {
+                    "parent_id": 1000000,
+                    "id": 1010000,
+                    "name": "baseball"
+                },
+                {
+                    "parent_id": 1010000,
+                    "id": 1010100,
+                    "name": "mlb"
+                }
+            ],
+            "type": "mlb",
+            "id": 785875
+        }
+    ]
+}</code></pre>
 </section>
 
 <section class="slide">
