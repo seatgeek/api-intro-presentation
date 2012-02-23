@@ -22,14 +22,6 @@ body {
   padding: 10px;
   margin-bottom: 20px;
 }
-/*.slide pre {
-  border: 1px solid #ddd;
-  padding: 10px;
-  background: #fff;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1), 0 0 40px rgba(0, 0, 0, 0.05) inset;
-  position: relative;
-  color:#666;
-}*/
 .slide .fancy pre {
   margin-bottom: 0;
   padding:0;
